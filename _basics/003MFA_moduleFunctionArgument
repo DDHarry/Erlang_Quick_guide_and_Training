@@ -1,0 +1,16 @@
+% Erlang comment
+%%% Usually done like this in programs
+% ------------------------------------
+
+-module(greetings).
+-export([hello/0, hello/1]).
+
+hello() ->
+  io:format("Hello the World~n").
+  
+hello(Someone) ->
+  io:format("Hello ~st~n", Someone).
+  
+  
+  %%% Write this 'greetings.erl' file
+  %%% Run with greetings:hello(Bob).

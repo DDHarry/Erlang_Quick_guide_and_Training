@@ -1,6 +1,6 @@
-
-> :: Erlang shell
-  >> :: Erlang shell's return
+%%% We adopt the foolowing notations
+  > :: Erlang shell
+    >> :: Erlang shell's return
   
 
 atom

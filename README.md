@@ -48,7 +48,7 @@ Now with an input name :
 
 >*\>\> Hello 'Bob'!*
 
-**[ &#8679; Back to the top](#table-of-content)**
+**[ &#8679; to the top](#table-of-content)**
 
 
 <a name="1.2"></a><a name="compiling--erlang-shell"></a>
@@ -61,7 +61,7 @@ $ erl
 
 >\>\> Hello Bob
 
-**[&#8679; Back to the top](#table-of-content)**
+**[&#8679; to the top](#table-of-content)**
 
 
 >
@@ -79,7 +79,7 @@ An atom is
 
 here
 
-**[ &#8679; Back to the top](#table-of-content)**
+**[ &#8679; to the top](#table-of-content)**
 
 
 

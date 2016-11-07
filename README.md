@@ -17,8 +17,8 @@
 2. [Types](#types)
 
 
-
-## 1. [Compiling](#compiling)
+<a name="compiling"></a><a name="1"></a>
+## 1. Compiling
 
 - [1.1](#compiling--nix-shell) Compiling and Running in the *nix Shell
 The Hello World program :
@@ -51,6 +51,7 @@ Now with an input name :
 **[ &#8679; Back to the top](#table-of-content)**
 
 
+<a name="1.2"></a><a name="compiling--erlang-shell"></a>
 - [1.2](#compiling--erlang-shell) Compiling and Running in the Erlang Shell
 $ erl
 
@@ -65,7 +66,7 @@ $ erl
 
 >
 <a name="types"></a><a name="2"></a>
-#2. [Types](#types)
+#2. Types
 
 <a name="2.1"></a><a name="types--atom"></a>
 - [2.1](#types--atom) atom

@@ -65,7 +65,8 @@ $ erl
 
 
 
-#2. Types
+#2. 
+#Types
 - [2.1](#types--atom)atom
 
 An atom is 

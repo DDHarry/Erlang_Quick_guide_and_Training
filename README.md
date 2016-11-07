@@ -44,7 +44,7 @@ hello(Someone) ->
 
 >*\>\> Hello 'Bob'!*
 
-**[Back to the top](#table-of-content)**
+**[ î Back to the top](#table-of-content)**
 
 
 ## 1.2 Compiling and Running in the Erlang Shell

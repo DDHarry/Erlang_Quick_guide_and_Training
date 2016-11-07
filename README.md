@@ -3,11 +3,11 @@
 
 ## Conventions used for this style guide
 
-$ for the *nix Shell
+>$ for the *nix Shell
 
-\> for the Erlang Shell
+>\> for the Erlang Shell
 
-\>\> the result
+>*\>\> the result*
 
 
 ## Table of content
@@ -34,14 +34,25 @@ hello(Someone) ->
   
 ```
 
-$ erlc greetings.erl
+>$ erlc greetings.erl
 
-$ erl -noshell -s greetings hello -s init stop
+>$ erl -noshell -s greetings hello -s init stop
 
-\>\> Hello the world!
+>*\>\> Hello the world!*
 
-$ erl -noshell -s greetings hello Bob -s init stop
+>$ erl -noshell -s greetings hello Bob -s init stop
 
-\>\> Hello 'Bob'!
+>*\>\> Hello 'Bob'!*
 
-** [Back to the top](#table-of-content)**
+**[Back to the top](#table-of-content)**
+
+
+## 1.2 Compiling and Running in the Erlang Shell
+$ erl
+
+> \> c(greetings).
+
+>\> greetings:hello('Bob').
+
+>again
+

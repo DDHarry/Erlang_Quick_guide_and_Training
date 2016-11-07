@@ -20,7 +20,7 @@
 
 ## 1. [Compiling](#compiling)
 
-### 1.1 Compiling and Running in the *nix Shell
+### [1.1](#compiling--nix-shell) Compiling and Running in the *nix Shell
 The Hello World program :
 
 ```erlang
@@ -51,7 +51,7 @@ Now with an input name :
 **[ &#8679; Back to the top](#table-of-content)**
 
 
-## 1.2 Compiling and Running in the Erlang Shell
+## [1.2](#compiling--erlang-shell) Compiling and Running in the Erlang Shell
 $ erl
 
 > \> c(greetings).
@@ -63,10 +63,14 @@ $ erl
 **[&#8679; Back to the top](#table-of-content)**
 
 
-#2. Types
-##2.1 [atom](#types)
 
-##atom
+
+#2. Types
+##[2.1](#types--atom)atom
+
+An atom is 
+*atom*
+
 
 here
 

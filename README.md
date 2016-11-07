@@ -63,16 +63,19 @@ $ erl
 **[&#8679; Back to the top](#table-of-content)**
 
 
+>
+<a name="types"></a><a name="2"></a>
+#2. [Types](#types)
 
-
-#2. 
-#Types
-- [2.1](#types--atom)atom
+<a name="2.1"></a><a name="types--atom"></a>
+- [2.1](#types--atom) atom
 
 An atom is 
 *atom*
 
+<a name="types--tuple"></a>
 - [2.2](#types--tuple) Tuple
+
 here
 
 **[ &#8679; Back to the top](#table-of-content)**

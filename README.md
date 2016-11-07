@@ -61,12 +61,10 @@ $ erl
 
 >\>\> Hello Bob
 
-**[&#8679; to the top](#table-of-content)**
 
 
->
 <a name="types"></a><a name="2"></a>
-#2. Types
+##2. Types
 
 <a name="2.1"></a><a name="types--atom"></a>
 - [2.1](#types--atom) atom
@@ -80,6 +78,30 @@ An atom is
 here
 
 **[ &#8679; to the top](#table-of-content)**
+
+
+
+<a name="title"></a><a name="999"></a>
+## 999. Title
+
+<a name="999.1"></a><a name="title--suba"></a>
+- [999.1](#title--suba) suba
+
+here
+
+
+<a name="999.2"></a><a name="title--subb"></a>
+- [999.2](#title--subb) subb
+
+here
+
+``` erlang
+-module(name).
+-export([func/0]).
+```
+
+**[ &#8679; to the top](#table-of-content)**
+
 
 
 

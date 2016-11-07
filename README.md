@@ -14,6 +14,8 @@
 
 1. [Compiling greetings.erl] (#compiling)
 
+2. [Types](#types)
+
 
 
 ## 1. [Compiling](#compiling)
@@ -40,11 +42,13 @@ hello(Someone) ->
 
 >*\>\> Hello the world!*
 
+Now with an input name :
+
 >$ erl -noshell -s greetings hello Bob -s init stop
 
 >*\>\> Hello 'Bob'!*
 
-**[ î Back to the top](#table-of-content)**
+**[ &#8679; Back to the top](#table-of-content)**
 
 
 ## 1.2 Compiling and Running in the Erlang Shell
@@ -54,5 +58,19 @@ $ erl
 
 >\> greetings:hello('Bob').
 
->again
+>\>\> Hello Bob
+
+**[&#8679; Back to the top](#table-of-content)**
+
+
+#2. Types
+##2.1 [atom](#types)
+
+##atom
+
+here
+
+**[ &#8679; Back to the top](#table-of-content)**
+
+
 

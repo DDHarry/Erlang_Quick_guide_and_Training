@@ -8,6 +8,10 @@ $: input prompt for the *nix Shell
 
 > input prompt for the Erlang Shell
 
+or
+
+c(greetings).   % nothing before the command
+
  >> the result got from the former input
 ```
 
@@ -218,7 +222,7 @@ X , _x , Var_is_also_one
 Erlang variables do not vary : they are immutable!
 
 ``` erlang
-X = 3.
+> X = 3.
 ``` 
 
 is a pattern-matching operation.
@@ -231,8 +235,9 @@ There exists the *anonymous variable* "_" .
 ### - [5.2](#types--atom) atom
 
 An atom starts with a lowercase letters.
-
+```erlang
   like, hEre33 , 'An atom' , another_one , "stop_it"
+```
 
 
 <a name='5.3'></a><a name="types--tuple"></a>
@@ -247,9 +252,9 @@ Person = {person, {name, jane, doe} , {height, 1.78}}.
 Extracting values by pattern-matching
 
 ```erlang
-{ _ , { -, Who, _ }, { _, _ } = Person.
+> { _ , { -, Who, _ }, { _, _ } = Person.
 
-Who.
+> Who.
 
 >> jane
 ```
@@ -261,29 +266,29 @@ Who.
 ``` erlang
 [] % is the empty list
 
-L =[2,3*7,hello].
+> L =[2,3*7,hello].
 
-ThingsToBuy = [{apples,4}, {milk,3}, {newspaper,1}].
+> ThingsToBuy = [{apples,4}, {milk,3}, {newspaper,1}].
 ```
 
 Extracting by Head and Tail of a List
 
 1. First example
 ```erlang
-L = [H | T].
+> L = [H | T].
 
-H.
+> H.
 
 >> H = 2
 
-T.
+> T.
 
->> [3*7,Hello()].
+>> [3*7, Hello].
 ```
 
 2. Two lists
 ```erlang
-ThingsToBuyb = [{oranges, 4}, {pears, 6} | ThingsToBuy].
+> ThingsToBuyb = [{oranges, 4}, {pears, 6} | ThingsToBuy].
 ```
 
 **[ &#8679; to the top](#table-of-content)**

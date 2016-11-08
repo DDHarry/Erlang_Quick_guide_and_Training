@@ -3,7 +3,7 @@
 
 ## Conventions used for this style guide
 
->$ for the *nix Shell
+\: for the *nix Shell
 
 >\> for the Erlang Shell
 
@@ -18,7 +18,7 @@ A. Sequential Erlang
 
 2. [The Hello World - Module, function](#hello-world-module-function)
 
-x. [Comments and Documentation](#comments-documentation) + comments 122 
+2. [Comments and Documentation](#comments-documentation) + comments 122 
 
 3. [Compilation and Code loading](#compilation-code-loading) + ch10 p160
 
@@ -162,20 +162,20 @@ hello(Someone) ->
 Then we compile from the \*nix shell
 
 ```erlang
->$ erlc greetings.erl
+\: erlc greetings.erl
 
->$ erl -noshell -s greetings hello -s init stop
+\: erl -noshell -s greetings hello -s init stop
 
-  >> Hello the world!
+\:  >> Hello the world!
 ```
 
 Now with an input name :
 
 ```erlang
 
->$ erl -noshell -s greetings hello Bob -s init stop
+\: erl -noshell -s greetings hello Bob -s init stop
 
-  >> Hello 'Bob'!
+\:  >> Hello 'Bob'!
 
 ```
   
@@ -186,7 +186,7 @@ Now with an input name :
 
 ```erlang
 
-$ erl
+\: erl
 
 > c(greetings).
 

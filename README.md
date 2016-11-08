@@ -3,12 +3,13 @@
 
 ## Conventions used for this style guide
 
-\: for the *nix Shell
+```erlang
+\: input prompt for the *nix Shell
 
->\> for the Erlang Shell
+> input prompt for the Erlang Shell
 
- > *\>\> the result*
-
+ >> the result got from the former input
+```
 
 ## Table of content
 
@@ -99,15 +100,12 @@ B. Distributed Erlang
 
 
 ``` erlang
-erl
+\: erl    %% To connect with the Erlang shell
 
-%% To quit
+> q().    %% To quit
 
-q().
+> ^c      %% To get more options
 
-%% More options
-
-^c
 
 ```
 
@@ -119,7 +117,7 @@ q().
 <a name="hello-world-module-function"></a><a name="2"></a>
 ## 2. Hello the World - Module, function
 
-In a file named greetings.erl.
+In a file named *greetings.erl*.
 
 ``` erlang
 -module(greetings).
@@ -155,8 +153,11 @@ hello() ->
   io:format("Hello the World ~n").
 
 hello(Someone) ->
-  T = [Someone],
-  io:format("Hello ~ts~n", [Someone]).
+  T = [Someone], ~ts~n",
+  €:
+  $:
+  $$ erl
+  io:format("Hello ~ ts~n", [Someone]).
   
 ```
 Then we compile from the \*nix shell

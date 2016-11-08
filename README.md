@@ -140,29 +140,49 @@ $ erl
 <a name="4.1"></a><a name="types--variables"></a>
 - [4.1](#types--variables) Variables
 
-Starts with an uppper case
+Starts with an uppper case or the underscore symbole "_"
+```erlang
+X , _x , Var_is_also_one
+```
 
 Erlang variables do not vary : they are immutable!
 
-```erlang
-X =3. ``` 
+``` erlang
+X = 3.
+``` 
 
 is a pattern-matching operation.
 
-*atom*
+There exists the *anonymous variable* "_" .
 
 
-<a name="4.1"></a><a name="types--atom"></a>
-- [4.1](#types--atom) atom
 
-An atom is 
-*atom*
+<a name="4.2"></a><a name="types--atom"></a>
+- [4.2](#types--atom) atom
+
+An atom starts with a lowercase letters.
+
+  like, hEre33 , 'An atom' , another_one , "stop_it"
 
 
-<a name="types--tuple"></a>
-- [2.2](#types--tuple) Tuple
+<a name='4.3'></a><a name="types--tuple"></a>
+- [4.3](#types--tuple) Tuple
 
-here
+```erlang
+
+Person = {person, {name, jane, doe} , {height, 1.78}}.
+
+```
+
+Extracting values by pattern-matching
+
+```erlang
+{ _ , { -, Who, _ }, { _, _ } = Person.
+
+Who.
+
+>> jane
+```
 
 **[ &#8679; to the top](#table-of-content)**
 

@@ -154,29 +154,33 @@ hello() ->
 
 hello(Someone) ->
   T = [Someone], ~ts~n",
-  €:
-  $:
-  $$ erl
-  io:format("Hello ~ ts~n", [Someone]).
+  io:format("Hello ~ts~n", [Someone]).
   
+```
+test
+``` erlang
+hello(Someone) ->
+ T = [Someone],
+ io:format( "Hello ~ts ~t~n ",[Someone]).
+ 
 ```
 Then we compile from the \*nix shell
 
 ```erlang
-\: erlc greetings.erl
+$: erlc greetings.erl
 
-\: erl -noshell -s greetings hello -s init stop
+$: erl -noshell -s greetings hello -s init stop
 
-\:  >> Hello the world!
+$  >> Hello the world!
 ```
 
 Now with an input name :
 
 ```erlang
 
-\: erl -noshell -s greetings hello Bob -s init stop
+$: erl -noshell -s greetings hello Bob -s init stop
 
-\:  >> Hello 'Bob'!
+$:  >> Hello 'Bob'!
 
 ```
   
@@ -187,7 +191,7 @@ Now with an input name :
 
 ```erlang
 
-\: erl
+$: erl
 
 > c(greetings).
 

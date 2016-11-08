@@ -12,15 +12,81 @@
 
 ## Table of content
 
+A. Sequential Erlang
+
 1. [Starting and stopping the Erlang shell](#erlang-shell)
 
 2. [The Hello World - Module, function](#hello-world-module-function)
 
-3. [Compiling](#compiling)
+x. [Comments and Documentation](#comments-documentation) + comments 122 
 
-4. [Types](#types)
+3. [Compilation and Code loading](#compilation-code-loading) + ch10 p160
 
-3. []()
+4. [Types](#types) + 8.26 p137
+
+5. [Strings](#strings)
+
+6. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
+
+7. [More on Modules, Functions, Arguments MFA](#mfa) + arity p116 + attributes p117 + 8.13.Expression
++ 8.14 + 8.15 +8.25 p137
+
+8. [Funs : Higher order functions](#funs)
+
+9. [Lists processing - Lists comprehension](#lists-processing-comprehension) + 4.9 p 70 + 8.16
+
+10. [Guards](#guards)
+
+11. [Case and if](#case-if)
+
+12. [Accumulators](#accumulators) + F. Hébert on accumulators
+
+13. [Records and maps](#records-maps)
+
+Error : no > sequential
+
+14. [Binaries and the Bit syntax](#binaries-bit-syntax)
+
+15. [Apply](#apply)
+
+16. [Arithmetic expressions](#arithmetic-expressions)
+
+17. [Block expression](#block-expressions)
+
+18. [Dynamic code loading](#dynamic-code-loading)
+
+19. [Erlang-preprocessor](#erlang-preprocessor)
+
+20. [Macros](#macros)
+
+21. [Match operators in pattern](#operators-match-pattern)
+
+22. [Pattern matching in types and functions arity](types-functions-pattern-matching) XXXXXX hello/0 & hello/1
+
+22. [Numbers](#numbers)
+
+23. [Operator precedence](#operator-precedence)
+
+24. [The process dictionary](#process-dictionary)
+
+25. [References](#references)
+
+26. [Short-circuit Boolean expressions](#short-circuit-boolean-expressions)
+
+27. [Term comparisons](#term-comparisons)
+
+28. [Types : -spec & -type ]()
+
+29. [The dialyzer](#the-dializer) 9.3
+
+B. Distributed Erlang
+
+30. [Concurrrent programming](#concurrent-programming) - Ch12
+
+31. [Errors in concurrent programs](#errors-concurrent-programs)
+
+
+
 
 
 
@@ -28,6 +94,9 @@
 ## 1. Starting and Stopping the Shell
 
 % A comment in Erlang
+
+%%% A very classical one
+
 
 ``` erlang
 erl
@@ -189,6 +258,8 @@ Who.
 ### - [4.4](#types--list) Lists
 
 ``` erlang
+[] % is the empty list
+
 L =[2,3*7,hello].
 
 ThingsToBuy = [{apples,4}, {milk,3}, {newspaper,1}].
@@ -196,6 +267,7 @@ ThingsToBuy = [{apples,4}, {milk,3}, {newspaper,1}].
 
 Extracting by Head and Tail of a List
 
+1. First example
 ```erlang
 L = [H | T].
 
@@ -206,14 +278,30 @@ H.
 T.
 
 >> [3*7,Hello()].
+```
 
-
+2. Two lists
+```erlang
 ThingsToBuyb = [{oranges, 4}, {pears, 6} | ThingsToBuy].
 ```
+
 **[ &#8679; to the top](#table-of-content)**
 
 
 
+
+
+
+
+
+
+Task list
+
+- [X] Live
+
+- [ ] Life
+
+- [ ] Love! Okay, this is done
 
 
 
@@ -233,8 +321,7 @@ here
 here
 
 ``` erlang
--module(name).
--export([func/0]).
+
 ```
 
 **[ &#8679; to the top](#table-of-content)**

@@ -4,7 +4,7 @@
 ## Conventions used for this style guide
 
 ```erlang
-\: input prompt for the *nix Shell
+$: input prompt for the *nix Shell
 
 > input prompt for the Erlang Shell
 
@@ -19,72 +19,72 @@ A. Sequential Erlang
 
 2. [The Hello World - Module, function](#hello-world-module-function)
 
-2. [Comments and Documentation](#comments-documentation) + comments 122 
+3. [Comments and Documentation](#comments-documentation) + comments 122 
 
-3. [Compilation and Code loading](#compilation-code-loading) + ch10 p160
+4. [Compilation and Code loading](#compilation-code-loading) + ch10 p160
 
-4. [Types](#types) + 8.26 p137
+5. [Types](#types) + 8.26 p137
 
-5. [Strings](#strings)
+6. [Strings](#strings)
 
-6. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
+7. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
 
-7. [More on Modules, Functions, Arguments MFA](#mfa) + arity p116 + attributes p117 + 8.13.Expression
+8. [More on Modules, Functions, Arguments MFA](#mfa) + arity p116 + attributes p117 + 8.13.Expression
 + 8.14 + 8.15 +8.25 p137
 
-8. [Funs : Higher order functions](#funs)
+9. [Funs : Higher order functions](#funs)
 
-9. [Lists processing - Lists comprehension](#lists-processing-comprehension) + 4.9 p 70 + 8.16
+10. [Lists processing - Lists comprehension](#lists-processing-comprehension) + 4.9 p 70 + 8.16
 
-10. [Guards](#guards)
+11. [Guards](#guards)
 
-11. [Case and if](#case-if)
+12. [Case and if](#case-if)
 
-12. [Accumulators](#accumulators) + F. Hébert on accumulators
+13. [Accumulators](#accumulators) + F. Hébert on accumulators
 
-13. [Records and maps](#records-maps)
+14. [Records and maps](#records-maps)
 
 Error : no > sequential
 
-14. [Binaries and the Bit syntax](#binaries-bit-syntax)
+15. [Binaries and the Bit syntax](#binaries-bit-syntax)
 
-15. [Apply](#apply)
+16. [Apply](#apply)
 
-16. [Arithmetic expressions](#arithmetic-expressions)
+17. [Arithmetic expressions](#arithmetic-expressions)
 
-17. [Block expression](#block-expressions)
+18. [Block expression](#block-expressions)
 
-18. [Dynamic code loading](#dynamic-code-loading)
+19. [Dynamic code loading](#dynamic-code-loading)
 
-19. [Erlang-preprocessor](#erlang-preprocessor)
+20. [Erlang-preprocessor](#erlang-preprocessor)
 
-20. [Macros](#macros)
+21. [Macros](#macros)
 
-21. [Match operators in pattern](#operators-match-pattern)
+22. [Match operators in pattern](#operators-match-pattern)
 
-22. [Pattern matching in types and functions arity](types-functions-pattern-matching) XXXXXX hello/0 & hello/1
+23. [Pattern matching in types and functions arity](types-functions-pattern-matching) XXXXXX hello/0 & hello/1
 
-22. [Numbers](#numbers)
+24. [Numbers](#numbers)
 
-23. [Operator precedence](#operator-precedence)
+25. [Operator precedence](#operator-precedence)
 
-24. [The process dictionary](#process-dictionary)
+26. [The process dictionary](#process-dictionary)
 
-25. [References](#references)
+27. [References](#references)
 
-26. [Short-circuit Boolean expressions](#short-circuit-boolean-expressions)
+28. [Short-circuit Boolean expressions](#short-circuit-boolean-expressions)
 
-27. [Term comparisons](#term-comparisons)
+29. [Term comparisons](#term-comparisons)
 
-28. [Types : -spec & -type ]()
+30. [Types : -spec & -type ]()
 
-29. [The dialyzer](#the-dializer) 9.3
+31. [The dialyzer](#the-dializer) 9.3
 
 B. Distributed Erlang
 
-30. [Concurrrent programming](#concurrent-programming) - Ch12
+32. [Concurrrent programming](#concurrent-programming) - Ch12
 
-31. [Errors in concurrent programs](#errors-concurrent-programs)
+33. [Errors in concurrent programs](#errors-concurrent-programs)
 
 
 
@@ -92,7 +92,7 @@ B. Distributed Erlang
 
 
 <a name="erlang-shell"></a><a name="1"></a>
-## 1. Starting and Stopping the Shell
+## [1](erlang-shell). Starting and Stopping the Shell
 
 % A comment in Erlang
 
@@ -100,7 +100,7 @@ B. Distributed Erlang
 
 
 ``` erlang
-\: erl    %% To connect with the Erlang shell
+$: erl    %% To connect with the Erlang shell
 
 > q().    %% To quit
 
@@ -115,7 +115,7 @@ B. Distributed Erlang
 
 
 <a name="hello-world-module-function"></a><a name="2"></a>
-## 2. Hello the World - Module, function
+## [2](#hello-world-module-function). Hello the World - Module, function
 
 In a file named *greetings.erl*.
 
@@ -139,10 +139,25 @@ Then
 
 
 
-<a name="compiling"></a><a name="3"></a>
-## 3. Compiling
 
-### - [3.1](#compiling--nix-shell) Compiling and Running in the *nix Shell
+
+<a name="3"></a><a name="comments-documentation"></a>
+## [3](#comments-documentation). Comments and Documentation
+
+```erlang
+
+% Comment
+%%% To be more fancy
+
+```
+
+**[ &#8679; to the top](#table-of-content)**
+
+
+
+
+<a name="compilation-code-loading"></a><a name="4"></a>
+## [4](#compilation-code-loading). Compilation and Code loading
 The New Hello World program :
 
 ```erlang
@@ -153,17 +168,11 @@ hello() ->
   io:format("Hello the World ~n").
 
 hello(Someone) ->
-  T = [Someone], ~ts~n",
-  io:format("Hello ~ts~n", [Someone]).
+  T = [Someone] ,
+  io:format(" Hello ~ts~n ", [Someone]).
   
 ```
-test
-``` erlang
-hello(Someone) ->
- T = [Someone],
- io:format( "Hello ~ts ~t~n ",[Someone]).
- 
-```
+
 Then we compile from the \*nix shell
 
 ```erlang
@@ -171,7 +180,7 @@ $: erlc greetings.erl
 
 $: erl -noshell -s greetings hello -s init stop
 
-$  >> Hello the world!
+$:  >> Hello the world!
 ```
 
 Now with an input name :
@@ -186,20 +195,6 @@ $:  >> Hello 'Bob'!
   
 
 
-<a name="3.2"></a><a name="compiling--erlang-shell"></a>
-### - [3.2](#compiling--erlang-shell) Compiling and Running in the Erlang Shell
-
-```erlang
-
-$: erl
-
-> c(greetings).
-
-> greetings:hello('Bob').
-
->> Hello Bob
-```
-
 **[ &#8679; to the top](#table-of-content)**
 
 
@@ -208,11 +203,12 @@ $: erl
 
 
 
-<a name="types"></a><a name="4"></a>
-##4. Types
+<a name="types"></a><a name="5"></a>
+## [5](#types). Types
 
-<a name="4.1"></a><a name="types--variables"></a>
-### - [4.1](#types--variables) Variables
+
+<a name="5.1"></a><a name="types--variables"></a>
+### - [5.1](#types--variables) Variables
 
 Starts with an uppper case or the underscore symbole "_"
 ```erlang
@@ -231,16 +227,16 @@ There exists the *anonymous variable* "_" .
 
 
 
-<a name="4.2"></a><a name="types--atom"></a>
-### - [4.2](#types--atom) atom
+<a name="5.2"></a><a name="types--atom"></a>
+### - [5.2](#types--atom) atom
 
 An atom starts with a lowercase letters.
 
   like, hEre33 , 'An atom' , another_one , "stop_it"
 
 
-<a name='4.3'></a><a name="types--tuple"></a>
-### - [4.3](#types--tuple) Tuple
+<a name='5.3'></a><a name="types--tuple"></a>
+### - [5.3](#types--tuple) Tuple
 
 ```erlang
 
@@ -259,8 +255,8 @@ Who.
 ```
 
 
-<a name="4.4"></a><a name="types--list"></a>
-### - [4.4](#types--list) Lists
+<a name="5.4"></a><a name="types--list"></a>
+### - [5.4](#types--list) Lists
 
 ``` erlang
 [] % is the empty list

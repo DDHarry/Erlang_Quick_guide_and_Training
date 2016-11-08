@@ -75,7 +75,7 @@ Then
 <a name="compiling"></a><a name="3"></a>
 ## 3. Compiling
 
-- [3.1](#compiling--nix-shell) Compiling and Running in the *nix Shell
+### - [3.1](#compiling--nix-shell) Compiling and Running in the *nix Shell
 The New Hello World program :
 
 ```erlang
@@ -113,7 +113,7 @@ Now with an input name :
 
 
 <a name="3.2"></a><a name="compiling--erlang-shell"></a>
-- [1.2](#compiling--erlang-shell) Compiling and Running in the Erlang Shell
+### - [3.2](#compiling--erlang-shell) Compiling and Running in the Erlang Shell
 
 ```erlang
 
@@ -158,7 +158,7 @@ There exists the *anonymous variable* "_" .
 
 
 <a name="4.2"></a><a name="types--atom"></a>
-### [4.2](#types--atom) atom
+### - [4.2](#types--atom) atom
 
 An atom starts with a lowercase letters.
 
@@ -166,7 +166,7 @@ An atom starts with a lowercase letters.
 
 
 <a name='4.3'></a><a name="types--tuple"></a>
-###- [4.3](#types--tuple) Tuple
+### - [4.3](#types--tuple) Tuple
 
 ```erlang
 
@@ -184,15 +184,9 @@ Who.
 >> jane
 ```
 
-**[ &#8679; to the top](#table-of-content)**
 
-
-
-
-
-
-<a name="4.4"></a><a name="Ttypes--list"></a>
-- [4.4](#types--list) Lists
+<a name="4.4"></a><a name="types--list"></a>
+### - [4.4](#types--list) Lists
 
 ``` erlang
 L =[2,3*7,hello].
@@ -204,6 +198,15 @@ Extracting by Head and Tail of a List
 
 ```erlang
 L = [H | T].
+
+H.
+
+>> H = 2
+
+T.
+
+>> [3*7,Hello()].
+
 
 ThingsToBuyb = [{oranges, 4}, {pears, 6} | ThingsToBuy].
 ```

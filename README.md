@@ -138,7 +138,7 @@ $ erl
 ##4. Types
 
 <a name="4.1"></a><a name="types--variables"></a>
-- [4.1](#types--variables) Variables
+### - [4.1](#types--variables) Variables
 
 Starts with an uppper case or the underscore symbole "_"
 ```erlang
@@ -158,7 +158,7 @@ There exists the *anonymous variable* "_" .
 
 
 <a name="4.2"></a><a name="types--atom"></a>
-- [4.2](#types--atom) atom
+### [4.2](#types--atom) atom
 
 An atom starts with a lowercase letters.
 
@@ -166,7 +166,7 @@ An atom starts with a lowercase letters.
 
 
 <a name='4.3'></a><a name="types--tuple"></a>
-- [4.3](#types--tuple) Tuple
+###- [4.3](#types--tuple) Tuple
 
 ```erlang
 
@@ -185,6 +185,33 @@ Who.
 ```
 
 **[ &#8679; to the top](#table-of-content)**
+
+
+
+
+
+
+<a name="4.4"></a><a name="Ttypes--list"></a>
+- [4.4](#types--list) Lists
+
+``` erlang
+L =[2,3*7,hello].
+
+ThingsToBuy = [{apples,4}, {milk,3}, {newspaper,1}].
+```
+
+Extracting by Head and Tail of a List
+
+```erlang
+L = [H | T].
+
+ThingsToBuyb = [{oranges, 4}, {pears, 6} | ThingsToBuy].
+```
+**[ &#8679; to the top](#table-of-content)**
+
+
+
+
 
 
 

@@ -6,14 +6,30 @@
 ```erlang
 $: input prompt for the *nix Shell
 
-> input prompt for the Erlang Shell
+and
 
-or
+> input prompt for the Erlang Shell
 
 c(greetings).   % nothing before the command
 
+output
+
  >> the result got from the former input
 ```
+## Sources
+
+Erlang official documentation : [erlDoc] http://erlang.org/doc/
+
+which drives us to :
+
+Erlang.org/doc /Erlang Reference Manual - User's Guide : [erlDocRefMan] http://erlang.org/doc/reference_manual/users_guide.html
+
+Erlang.org/doc - /Applications : [erlDocApp] http://erlang.org/doc/applications.html
+
+Erlang.org/doc /Modules  : [erlDocMod] http://erlang.org/doc/man_index.html
+
+( We skip the Getting started User's guide : http://erlang.org/doc/getting_started/users_guide.html )
+
 
 ## Table of content
 
@@ -23,9 +39,9 @@ A. Sequential Erlang
 
 2. [The Hello World - Module, function](#hello-world-module-function)
 
-3. [Comments and Documentation](#comments-documentation) + comments 122 
+3. [Comments and Documentation](#comments-documentation)
 
-4. [Compilation and Code loading](#compilation-code-loading) + ch10 p160
+4. [Compilation, Code loading, Path, Running Erlang codes](#compilation-code-loading-running) + ch10 p160
 
 5. [Types](#types) + 8.26 p137
 
@@ -150,8 +166,11 @@ Then
 
 ```erlang
 
-% Comment
+% This is a comment
 %%% To be more fancy
+
+this_function(Arg) ->
+     do sthg with Arg. % Comment here, it works
 
 ```
 
@@ -160,8 +179,11 @@ Then
 
 
 
-<a name="compilation-code-loading"></a><a name="4"></a>
-## [4](#compilation-code-loading). Compilation and Code loading
+<a name="compilation-code-loading-running"></a><a name="4"></a>
+## [4](#compilation-code-loading-running). Compilation and Code loading
+
+### Compiling
+
 The New Hello World program :
 
 ```erlang
@@ -196,7 +218,40 @@ $: erl -noshell -s greetings hello Bob -s init stop
 $:  >> Hello 'Bob'!
 
 ```
-  
+
+### Fixing the executing path
+
+To get the value of the current load path
+
+```erlang
+code:get_path().
+
+ ```
+ 
+ To manipulate the load path
+ 
+ ```erlang
+ -spec code:add_patha(Dir) => true | {error, bad_directory}  :: add a new directory, Dir, to the start of the load path
+ -spec code:add_pathz(Dir) => true | {error, bad_directory}  :: add ''                ...                     load path
+ 
+code:all_loaded.      list of all loaded modules
+
+code:clash().          Just to investigate
+
+If anything wrong :    code:clash;
+```
+Recommendation  :: Place alll these features in a file called **".erlang" ** file
+
+
+Path search at Erlang shell startup
+
+```erlang
+$: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
+
+```
+the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
+
+
 
 
 **[ &#8679; to the top](#table-of-content)**

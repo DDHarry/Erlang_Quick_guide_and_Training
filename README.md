@@ -18,19 +18,17 @@ For the Erlang Shell
 
 ## Sources
 
-. [erlDocRefMan] [The Erlang Reference Manual - User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)
+. The Erlang Reference Manual - [User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)
 
 **Other**
 
-~/ <=> http://erlang.org.doc/
+Erlang official documentation : http://erlang.org/doc/
 
-Erlang official documentation : [erlDoc] http://erlang.org/doc/
+. Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
 
-. [erlDocApp] Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
+. Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
 
-. [erlDocMod] Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
-
-The [Getting started User's guide](http://erlang.org/doc/getting_started/users_guide.html) )
+The [Getting started User's guide](http://erlang.org/doc/getting_started/users_guide.html)
 
 
 ## Table of content
@@ -169,17 +167,35 @@ this_function(Arg) ->
 ```
 eDoc : Erlang program documentation generator.
 
-Extracting information :
+Extracting information using module_info/0
 ```Erlang
 > c(greetings).
 > greetings:module_info().
 >> [{module,greetings},
-     {exports,[{hello,0},
-         ...
-     {md5,<<122,14,95,88,121,242,93,116,30,92,210,87,59,169,
-        176,51>>}]
+ {exports,[{hello,0},
+           {hello,1},
+           {module_info,0},
+           {module_info,1}]},
+ {attributes,[{vsn,[162240441480510559803838439317941366835]}]},
+ {compile,[{options,[]},
+           {version,"7.0.2"},
+           {source,"/Users/jeanbaptiste/workspace/wkserlang/greetings.erl"}]},
+ {native,false},
+ {md5,<<122,14,95,88,121,242,93,116,30,92,210,87,59,169,
+        176,51>>}
 
 ```
+Information using module_info/1
+```Erlang
+> greetings:module_info(key).
+```
+where key is an atom, cf. module_info/0, in (module, functions, exports, attributes, compile, native, md5) cf. module_info/0
+```Erlang
+> greetings:module_info(functions)
+>> [{hello,0},{hello,1},{module_info,0},{module_info,1}]
+```
+
+
 
 **[ &#8679; to the top](#table-of-content)**
 

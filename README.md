@@ -126,8 +126,8 @@ $: erl    %% To connect with the Erlang shell
 
 
 
-<a name="hello-world-module-function"></a><a name="2"></a>
-## [2](#hello-world-module-function). Hello the World - Module, function
+<a name="hello-the-world"></a><a name="2"></a>
+## [2](#hello-the-world). Hello the World
 
 In a file named *greetings.erl*.
 
@@ -154,7 +154,7 @@ Then
 
 
 <a name="3"></a><a name="comments-documentation-edoc"></a>
-## [3](#comments-documentation-edoc). Comments and Documentation
+## [3](#comments-documentation-edoc). Comments and Documentation - edoc
 
 ```erlang
 

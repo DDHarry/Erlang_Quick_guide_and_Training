@@ -3,19 +3,19 @@
 
 ## Conventions used for this style guide
 
+For the \*nix Shell
 ```erlang
 $: input prompt for the *nix Shell
-
-and
-
-> input prompt for the Erlang Shell
-
-c(greetings).   % nothing before the command
-
-output
-
- >> the result got from the former input
+>> follow by an *nix shell output
 ```
+
+For the Erlang Shell
+```Erlang
+> Erlang_cmd.   % 1st command input after the Erlang Shell prompt
+> c(greetings).   % 2nd command
+ >> output the result
+```
+
 ## Sources
 
 Erlang official documentation : [erlDoc] http://erlang.org/doc/
@@ -39,7 +39,7 @@ A. Sequential Erlang
 
 2. [The Hello World - Module, function](#hello-world-module-function)
 
-3. [Comments and Documentation](#comments-documentation)
+3. [Comments and Documentation - edoc](#comments-documentation-edoc)
 
 4. [Compilation, Code loading, Path, Running Erlang codes](#compilation-code-loading-running) + ch10 p160
 
@@ -114,18 +114,10 @@ B. Distributed Erlang
 <a name="erlang-shell"></a><a name="1"></a>
 ## [1](erlang-shell). Starting and Stopping the Shell
 
-% A comment in Erlang
-
-%%% A very classical one
-
-
 ``` erlang
 $: erl    %% To connect with the Erlang shell
-
-> q().    %% To quit
-
 > ^c      %% To get more options
-
+> q().    %% To quit
 
 ```
 
@@ -161,8 +153,8 @@ Then
 
 
 
-<a name="3"></a><a name="comments-documentation"></a>
-## [3](#comments-documentation). Comments and Documentation
+<a name="3"></a><a name="comments-documentation-edoc"></a>
+## [3](#comments-documentation-edoc). Comments and Documentation
 
 ```erlang
 

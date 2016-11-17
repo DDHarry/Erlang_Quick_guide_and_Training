@@ -18,17 +18,19 @@ For the Erlang Shell
 
 ## Sources
 
+. [erlDocRefMan] [The Erlang Reference Manual - User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)
+
+**Other**
+
+~/ <=> http://erlang.org.doc/
+
 Erlang official documentation : [erlDoc] http://erlang.org/doc/
-
-considering ~/ as http://erlang.org.doc/
-
-. [erlDocRefMan] The Erlang Reference Manual - User's Guide : [~/reference_manual/users_guide.html](http://erlang.org/doc/reference_manual/users_guide.html)
 
 . [erlDocApp] Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
 
 . [erlDocMod] Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
 
-( We skip the Getting started User's guide : http://erlang.org/doc/getting_started/users_guide.html )
+The [Getting started User's guide](http://erlang.org/doc/getting_started/users_guide.html) )
 
 
 ## Table of content
@@ -126,10 +128,10 @@ $: erl    %% To connect with the Erlang shell
 
 
 
-<a name="hello-the-world"></a><a name="2"></a>
-## [2](#hello-the-world). Hello the World
+<a name="hello-world-module-function"></a><a name="2"></a>
+## [2](#hello-world-module-function). Hello the World
 
-In a file named *greetings.erl*.
+Functions are the basic unit. They live in modules. In a file named *greetings.erl*.
 
 ``` erlang
 -module(greetings).
@@ -138,7 +140,7 @@ In a file named *greetings.erl*.
 hello ->
   io:format("Hello the World~n").
 ```
-Then
+Then compiling,
 
 ```erlang
 > c(greetings).
@@ -163,6 +165,19 @@ Then
 
 this_function(Arg) ->
      do sthg with Arg. % Comment here, it works
+
+```
+eDoc : Erlang program documentation generator.
+
+Extracting information :
+```Erlang
+> c(greetings).
+> greetings:module_info().
+>> [{module,greetings},
+     {exports,[{hello,0},
+         ...
+     {md5,<<122,14,95,88,121,242,93,116,30,92,210,87,59,169,
+        176,51>>}]
 
 ```
 

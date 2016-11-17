@@ -20,13 +20,13 @@ For the Erlang Shell
 
 Erlang official documentation : [erlDoc] http://erlang.org/doc/
 
-which drives us to :
+considering ~/ as http://erlang.org.doc/
 
-Erlang.org/doc /Erlang Reference Manual - User's Guide : [erlDocRefMan] http://erlang.org/doc/reference_manual/users_guide.html
+. [erlDocRefMan] The Erlang Reference Manual - User's Guide : [~/reference_manual/users_guide.html](http://erlang.org/doc/reference_manual/users_guide.html)
 
-Erlang.org/doc - /Applications : [erlDocApp] http://erlang.org/doc/applications.html
+. [erlDocApp] Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
 
-Erlang.org/doc /Modules  : [erlDocMod] http://erlang.org/doc/man_index.html
+. [erlDocMod] Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
 
 ( We skip the Getting started User's guide : http://erlang.org/doc/getting_started/users_guide.html )
 

@@ -162,10 +162,16 @@ Then compiling,
 % This is a comment
 %%% To be more fancy
 
-this_function(Arg) ->
-     do sthg with Arg. % Comment here, it works
-
+> this_function(Arg) ->
+      do sthg with Arg. % Comment here, it works
 ```
+
+### • Erlang inline manual pages
+```Erlang
+> erl -man io
+>> (opens the manual ...)
+```
+
 ### • module_info/0/1
 
 Extracting information using module_info/0
@@ -200,8 +206,10 @@ where key is an atom, cf. module_info/0, in (module, functions, exports, attribu
 
 eDoc is an Erlang program [documentation](http://erlang.org/doc/apps/edoc/chapter.html) generator.
 
-Associated with the nearest signifiant
+Associated with the nearest signifiant program constructing term, the other constructs being ignored.
+```Erlang
 
+```
 
 **[ &#8679; to the top](#table-of-content)**
 

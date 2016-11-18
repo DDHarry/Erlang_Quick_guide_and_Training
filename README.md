@@ -215,6 +215,16 @@ Associated with the nearest signifiant program constructing term, the other cons
 ```
 the @doc type is associated with the function print/1 .
 
+Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+
+Erlang man pages ```Erlang
+                 ```
+```Erlang
+> erl -man edoc
+>> edoc / Edoc
+```
+
+>>> Follow the guides
 
 **[ &#8679; to the top](#table-of-content)**
 

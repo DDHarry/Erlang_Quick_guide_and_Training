@@ -208,8 +208,13 @@ eDoc is an Erlang program [documentation](http://erlang.org/doc/apps/edoc/chapte
 
 Associated with the nearest signifiant program constructing term, the other constructs being ignored.
 ```Erlang
-
+%% @doc Prints the value x
+> -record(foo{x, y, z});
+> print(X) ->
+   ...
 ```
+the @doc type is associated with the function print/1 .
+
 
 **[ &#8679; to the top](#table-of-content)**
 

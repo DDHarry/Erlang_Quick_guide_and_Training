@@ -24,11 +24,11 @@ For the Erlang Shell
 
 Erlang official documentation : http://erlang.org/doc/
 
-. Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
+• Applications doc - [~/Applications](http://erlang.org/doc/applications.html)
 
-. Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
+• Modules doc : [~/Modules](http://erlang.org/doc/man_index.html)
 
-The [Getting started User's guide](http://erlang.org/doc/getting_started/users_guide.html)
+• The [Getting started User's guide](http://erlang.org/doc/getting_started/users_guide.html)
 
 
 ## Table of content
@@ -156,6 +156,7 @@ Then compiling,
 <a name="3"></a><a name="comments-documentation-edoc"></a>
 ## [3](#comments-documentation-edoc). Comments and Documentation - edoc
 
+### • Comments
 ```erlang
 
 % This is a comment
@@ -165,7 +166,7 @@ this_function(Arg) ->
      do sthg with Arg. % Comment here, it works
 
 ```
-eDoc : Erlang program documentation generator.
+### • module_info/0/1
 
 Extracting information using module_info/0
 ```Erlang
@@ -195,6 +196,11 @@ where key is an atom, cf. module_info/0, in (module, functions, exports, attribu
 >> [{hello,0},{hello,1},{module_info,0},{module_info,1}]
 ```
 
+### • eDoc
+
+eDoc is an Erlang program [documentation](http://erlang.org/doc/apps/edoc/chapter.html) generator.
+
+Associated with the nearest signifiant
 
 
 **[ &#8679; to the top](#table-of-content)**
@@ -205,7 +211,7 @@ where key is an atom, cf. module_info/0, in (module, functions, exports, attribu
 <a name="compilation-code-loading-running"></a><a name="4"></a>
 ## [4](#compilation-code-loading-running). Compilation and Code loading
 
-### Compiling
+### • Compiling
 
 The New Hello World program :
 
@@ -226,23 +232,17 @@ Then we compile from the \*nix shell
 
 ```erlang
 $: erlc greetings.erl
-
 $: erl -noshell -s greetings hello -s init stop
-
 $:  >> Hello the world!
 ```
-
 Now with an input name :
 
 ```erlang
-
 $: erl -noshell -s greetings hello Bob -s init stop
-
 $:  >> Hello 'Bob'!
-
 ```
 
-### Fixing the executing path
+### • Fixing the executing path
 
 To get the value of the current load path
 

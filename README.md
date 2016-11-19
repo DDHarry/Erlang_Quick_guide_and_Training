@@ -226,6 +226,23 @@ Erlang man pages ```Erlang
 
 >>> Follow the guides
 
+```Erlang
+> edoc:run([], []).
+>> generates the doc for the files in the dir where you launch the command
+```
+
+```Erlang
+> edoc:run([], [{source_path, ["."]}, {dir, "documentation_dir"}]).
+>> generates the doc for the programs in the directory we are in "."
+>>  then creates documentation_dir if needed
+>> places it in the directory named documentation_dir
+```
+
+
+
+
+
+
 **[ &#8679; to the top](#table-of-content)**
 
 

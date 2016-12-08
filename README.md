@@ -41,26 +41,26 @@ A. Sequential Erlang
 
 3. [Comments and Documentation - edoc](#comments-documentation-edoc)
 
-4. [Compilation, Code loading, Path, Running Erlang codes](#compilation-code-loading-running) + ch10 p160
+4. [Compilation, Code loading, Path, Running Erlang codes ch10](#compilation-code-loading-running)
 
-5. [Types](#types) + 8.26 p137
+5. [Types  + 8.26 p137](#types)
 
 6. [Strings](#strings)
 
 7. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
 
-8. [More on Modules, Functions, Arguments MFA](#mfa) + arity p116 + attributes p117 + 8.13.Expression
-+ 8.14 + 8.15 +8.25 p137
+8. [More on Modules, Functions, Arguments MFA + arity p116 + attributes p117 + 8.13.Expression
++ 8.14 + 8.15 +8.25 p137](#mfa)
 
 9. [Funs : Higher order functions](#funs)
 
-10. [Lists processing - Lists comprehension](#lists-processing-comprehension) + 4.9 p 70 + 8.16
+10. [Lists processing - Lists comprehension  + 4.9 p 70 + 8.16](#lists-processing-comprehension)
 
 11. [Guards](#guards)
 
 12. [Case and if](#case-if)
 
-13. [Accumulators](#accumulators) + F. Hébert on accumulators
+13. [Accumulators Accumulators @FHebert ](#accumulators)
 
 14. [Records and maps](#records-maps)
 
@@ -82,7 +82,7 @@ Error : no > sequential
 
 22. [Match operators in pattern](#operators-match-pattern)
 
-23. [Pattern matching in types and functions arity](types-functions-pattern-matching) XXXXXX hello/0 & hello/1
+23. [Pattern matching in types and functions arity  XXXXXX hello/0 & hello/1](types-functions-pattern-matching)
 
 24. [Numbers](#numbers)
 
@@ -98,11 +98,11 @@ Error : no > sequential
 
 30. [Types : -spec & -type ]()
 
-31. [The dialyzer](#the-dializer) 9.3
+31. [The dialyzer 9.3](#the-dializer)
 
 B. Distributed Erlang
 
-32. [Concurrrent programming](#concurrent-programming) - Ch12
+32. [Concurrrent programming Ch12 ](#concurrent-programming)
 
 33. [Errors in concurrent programs](#errors-concurrent-programs)
 
@@ -283,6 +283,13 @@ $:  >> Hello 'Bob'!
 
 ### • Fixing the executing path
 
+Getting the 'home'
+```erlang
+$: init:get_argument(home).
+> init:get_argument(home).
+> {ok,[["/Users/jane"]]}
+```
+
 To get the value of the current load path
 
 ```erlang
@@ -325,7 +332,7 @@ $: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
 the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
 
 
-**= RECOMMENDATION =**
+### > RECOMMENDATION <
 
 Place alll these features in a file called **".erlang" ** file
 

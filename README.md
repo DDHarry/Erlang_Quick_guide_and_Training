@@ -223,8 +223,7 @@ Erlang man pages ```Erlang
 > erl -man edoc
 >> edoc / Edoc
 ```
-
->>> Follow the guides
+Follow the guides
 
 ```Erlang
 > edoc:run([], []).
@@ -288,32 +287,47 @@ To get the value of the current load path
 
 ```erlang
 code:get_path().
+[".",
+ "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/kernel-5.1/ebin",
+ "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/stdlib-3.1/ebin",
+ ...
+  "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/gs-1.6.2/ebin",
+ [...]|...]
 
  ```
  
  To manipulate the load path
  
+ Erlang shell
  ```erlang
- -spec code:add_patha(Dir) => true | {error, bad_directory}  :: add a new directory, Dir, to the start of the load path
- -spec code:add_pathz(Dir) => true | {error, bad_directory}  :: add ''                ...                     load path
+ $: code:add_path(Dir)  %% Dir is the path to the target directory
+ ```
+ Inside a module
+ ```erlang
+ -spec code:add_patha(Dir) => true | {error, bad_directory}  %% add a new directory, Dir, to the start of the load path
+ -spec code:add_pathz(Dir) => true | {error, bad_directory}  %% add ''                ...                     load path
+ ```
  
-code:all_loaded.      list of all loaded modules
-
-code:clash().          Just to investigate
-
-If anything wrong :    code:clash;
+Get the list of all loaded modules
+```erlang
+$: code:all_loaded().  %%list of all loaded modules
 ```
-Recommendation  :: Place alll these features in a file called **".erlang" ** file
-
+Investigate if anything wrong
+```erlang
+$: code:clash().  %%Just to investigate
+```
 
 Path search at Erlang shell startup
-
 ```erlang
 $: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
 
 ```
 the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
 
+
+**= RECOMMENDATION =**
+
+Place alll these features in a file called **".erlang" ** file
 
 
 

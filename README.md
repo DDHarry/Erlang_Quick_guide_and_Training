@@ -166,8 +166,8 @@ Then compiling,
 ```
 
 ### • Erlang inline manual pages
-```Erlang
-> erl -man io
+```Shell
+$: erl -man io
 >> (opens the manual ...)
 ```
 
@@ -218,8 +218,8 @@ Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
 
 Erlang man pages ```Erlang
                  ```
-```Erlang
-> erl -man edoc
+```Shell
+$: erl -man edoc
 >> edoc / Edoc
 ```
 Follow the guides
@@ -291,29 +291,27 @@ $:  >> Hello 'Bob'!
 
 Getting the 'home'
 ```erlang
-$: init:get_argument(home).
 > init:get_argument(home).
-> {ok,[["/Users/jane"]]}
+>> {ok,[["/Users/jane"]]}
 ```
 
 To get the value of the current load path
 
 ```erlang
-code:get_path().
-[".",
- "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/kernel-5.1/ebin",
- "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/stdlib-3.1/ebin",
- ...
-  "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/gs-1.6.2/ebin",
- [...]|...]
-
+> code:get_path().
+>> [".",
+    "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/kernel-5.1/ebin",
+    "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/stdlib-3.1/ebin",
+     ...
+    "/usr/local/Cellar/erlang/19.1/lib/erlang/lib/gs-1.6.2/ebin",
+   [...]|...]
  ```
  
 ### • Manipulating the load path - Loaded modules
  
  Erlang shell
  ```erlang
- $: code:add_path(Dir)  %% Dir is the path to the target directory
+> code:add_path(Dir).  %% Dir is the path to the target directory
  ```
  Inside a module
  ```erlang
@@ -323,17 +321,16 @@ code:get_path().
  
 Get the list of all loaded modules
 ```erlang
-$: code:all_loaded().  %%list of all loaded modules
+> code:all_loaded().  %%list of all loaded modules
 ```
 Investigate if anything wrong
 ```erlang
-$: code:clash().  %%Just to investigate
+> code:clash().  %%Just to investigate
 ```
 
 Path search at Erlang shell startup
 ```erlang
 $: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
-
 ```
 the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
 
@@ -342,17 +339,17 @@ the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ``
 
 Place alll these features in a file called **".erlang" ** file
 
-When Erlang starts, it first reads and evaluates all the commands inside this file.
+When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
 ```erlang
 io:format("Hello, this is your .erlang file~n").
 ```
 Then
 ```erlang
 $: erl
-> Hello, this is your .erlang file
-Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
-
-Eshell V8.1  (abort with ^G) 
+>> Hello, this is your .erlang file
+> Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+>
+> Eshell V8.1  (abort with ^G) 
 ```
 
 
@@ -362,14 +359,17 @@ Eshell V8.1  (abort with ^G)
 
 ### • Quick scripting
 
-```erlang
-> erl -eval 'io:format("Memory: ~p~n", [erlang:memory(total)]).' -noshell -s init stop
-> Memory: 15561984
-> 
+```shell
+$: erl -eval 'io:format("Memory: ~p~n", [erlang:memory(total)]).' -noshell -s init stop
+>> Memory: 15561984
+```
 
-
-
-
+### • Compile & Run from the CLI prompt
+```shell
+$: erlc greetings.erl
+$: erl -noshell -s greetings hello -s init stop
+>> Hello the World!
+```
 
 **[ &#8679; to the top](#table-of-content)**
 

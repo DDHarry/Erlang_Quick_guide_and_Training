@@ -49,8 +49,7 @@ A. Sequential Erlang
 
 7. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
 
-8. [More on Modules, Functions, Arguments MFA + arity p116 + attributes p117 + 8.13.Expression
-+ 8.14 + 8.15 +8.25 p137](#mfa)
+8. [More on Modules, Functions, Arguments MFA + arity p116 +attributes p117+8.13.Expression+8.14+8.15+8.25 p137](#mfa)
 
 9. [Funs : Higher order functions](#funs)
 

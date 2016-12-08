@@ -249,6 +249,10 @@ Follow the guides
 <a name="compilation-code-loading-running"></a><a name="4"></a>
 ## [4](#compilation-code-loading-running). Compilation and Code loading
 
+
+<a name="4.1"></a><a name="compilation-code-loading-running--compiling"></a>
+### - [4.1](#compilation-code-loading-running--compiling) Compiling
+
 ### • Compiling
 
 The New Hello World program :
@@ -280,7 +284,10 @@ $: erl -noshell -s greetings hello Bob -s init stop
 $:  >> Hello 'Bob'!
 ```
 
-### • Fixing the executing path
+
+<a name="4.2"></a><a name="compilation-code-loading-running--paths"></a>
+### - [4.2](#compilation-code-loading-running--paths) Paths
+### • Getting the path
 
 Getting the 'home'
 ```erlang
@@ -302,7 +309,7 @@ code:get_path().
 
  ```
  
- To manipulate the load path
+### • Manipulating the load path - Loaded modules
  
  Erlang shell
  ```erlang
@@ -331,9 +338,36 @@ $: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
 the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
 
 
-### > RECOMMENDATION <
+### > Recommendation <
 
 Place alll these features in a file called **".erlang" ** file
+
+When Erlang starts, it first reads and evaluates all the commands inside this file.
+```erlang
+io:format("Hello, this is your .erlang file~n").
+```
+Then
+```erlang
+$: erl
+> Hello, this is your .erlang file
+Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V8.1  (abort with ^G) 
+```
+
+
+
+<a name="4.3"></a><a name="compilation-code-loading-running--running"></a>
+### - [4.3](#compilation-code-loading-running--running) Running
+
+### • Quick scripting
+
+```erlang
+> erl -eval 'io:format("Memory: ~p~n", [erlang:memory(total)]).' -noshell -s init stop
+> Memory: 15561984
+> 
+
+
 
 
 
@@ -354,7 +388,7 @@ Place alll these features in a file called **".erlang" ** file
 
 Starts with an uppper case or the underscore symbole "_"
 ```erlang
-X , _x , Var_is_also_one
+X , _x , Var_is_also_one  
 ```
 
 Erlang variables do not vary : they are immutable!

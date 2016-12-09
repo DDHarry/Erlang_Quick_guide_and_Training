@@ -214,7 +214,7 @@ Associated with the nearest signifiant program constructing term, the other cons
 ```
 the @doc type is associated with the function print/1 .
 
-Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+### > Reference :: Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
 
 Erlang man pages ```Erlang
                  ```
@@ -222,13 +222,12 @@ Erlang man pages ```Erlang
 $: erl -man edoc
 >> edoc / Edoc
 ```
-Follow the guides
-
+Example 1
 ```Erlang
 > edoc:run([], []).
 >> generates the doc for the files in the dir where you launch the command
 ```
-
+Example 2
 ```Erlang
 > edoc:run([], [{source_path, ["."]}, {dir, "documentation_dir"}]).
 >> generates the doc for the programs in the directory we are in "."
@@ -255,7 +254,7 @@ Follow the guides
 
 ### • Compiling
 
-The New Hello World program :
+The New Hello World program,
 
 ```erlang
 -module(greetings).
@@ -267,21 +266,19 @@ hello() ->
 hello(Someone) ->
   T = [Someone] ,
   io:format(" Hello ~ts~n ", [Someone]).
-  
 ```
-
-Then we compile from the \*nix shell
+we compile from the \*nix shell,
 
 ```erlang
 $: erlc greetings.erl
 $: erl -noshell -s greetings hello -s init stop
-$:  >> Hello the world!
+  >> Hello the world!
 ```
-Now with an input name :
+Now with an input name,
 
 ```erlang
 $: erl -noshell -s greetings hello Bob -s init stop
-$:  >> Hello 'Bob'!
+  >> Hello 'Bob'!
 ```
 
 
@@ -289,14 +286,13 @@ $:  >> Hello 'Bob'!
 ### - [4.2](#compilation-code-loading-running--paths) Paths
 ### • Getting the path
 
-Getting the 'home'
+Getting the 'home' directory
 ```erlang
 > init:get_argument(home).
 >> {ok,[["/Users/jane"]]}
 ```
 
 To get the value of the current load path
-
 ```erlang
 > code:get_path().
 >> [".",
@@ -369,6 +365,18 @@ $: erl -eval 'io:format("Memory: ~p~n", [erlang:memory(total)]).' -noshell -s in
 $: erlc greetings.erl
 $: erl -noshell -s greetings hello -s init stop
 >> Hello the World!
+```
+### • Run with a script
+In the file ```greetings.sh'''
+```shell
+#!/bin/sh
+erl -noshell -pa /home/jane/workspace/ -s greetings hello -s init stop  %% The absolute path containing greetings.beam
+```
+Then,
+```
+$: chmod u+x greetings.sh
+$: ./greetings.sh
+  >> Hello the World!
 ```
 
 **[ &#8679; to the top](#table-of-content)**

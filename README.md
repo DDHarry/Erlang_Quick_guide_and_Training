@@ -248,42 +248,8 @@ Example 2
 <a name="compilation-code-loading-running"></a><a name="4"></a>
 ## [4](#compilation-code-loading-running). Compilation and Code loading
 
-
-<a name="4.1"></a><a name="compilation-code-loading-running--compiling"></a>
-### - [4.1](#compilation-code-loading-running--compiling) Compiling
-
-### • Compiling
-
-The New Hello World program,
-
-```erlang
--module(greetings).
--export([hello/0, hello/1]).
-
-hello() ->
-  io:format("Hello the World ~n").
-
-hello(Someone) ->
-  T = [Someone] ,
-  io:format(" Hello ~ts~n ", [Someone]).
-```
-we compile from the \*nix shell,
-
-```erlang
-$: erlc greetings.erl
-$: erl -noshell -s greetings hello -s init stop
-  >> Hello the world!
-```
-Now with an input name,
-
-```erlang
-$: erl -noshell -s greetings hello Bob -s init stop
-  >> Hello 'Bob'!
-```
-
-
-<a name="4.2"></a><a name="compilation-code-loading-running--paths"></a>
-### - [4.2](#compilation-code-loading-running--paths) Paths
+<a name="4.1"></a><a name="compilation-code-loading-running--paths"></a>
+### - [4.1](#compilation-code-loading-running--paths) Paths
 ### • Getting the path
 
 Getting the 'home' directory
@@ -348,6 +314,57 @@ $: erl
 > Eshell V8.1  (abort with ^G) 
 ```
 
+<a name="4.2"></a><a name="compilation-code-loading-running--compiling"></a>
+### - [4.2](#compilation-code-loading-running--compiling) Compiling
+
+### • Compiling
+
+Example 1 : the New Hello World program,
+
+```erlang
+-module(greetings).
+-export([hello/0, hello/1]).
+
+hello() ->
+  io:format("Hello the World ~n").
+
+hello(Someone) ->
+  io:format(" Hello ~s with an input argument!~n ", [Someone]).
+```
+
+- From the Erlang shell
+```erlang
+$: erl
+> c(greetings).
+> greetings:hello("Bob").
+ >> Hello Bob!
+```
+
+
+Example 2 : the new new Hello World program
+
+```erlang
+-module(greetings).
+-export([hello/1]).
+
+hello([Someone]) ->
+  io:format(" Hello ~s, How are you?~n ", [Someone]),
+  init:stop().
+```
+- in the Erlang shell
+```erlang
+> c(greetings).
+> greetings:hello(["Bob"]).
+ >> Hello Bob, how are you?
+``` 
+
+- and, in the Unix shell
+```shell
+$: erlc greetings.erl
+$: erl -noshell -s greetings hello Bob
+  >> Hello Bob, how are you?
+```
+
 
 
 <a name="4.3"></a><a name="compilation-code-loading-running--running"></a>
@@ -360,14 +377,14 @@ $: erl -eval 'io:format("Memory: ~p~n", [erlang:memory(total)]).' -noshell -s in
 >> Memory: 15561984
 ```
 
-### • Compile & Run from the CLI prompt
+### • Compile & Run from the CLI prompt *-noshell*
 ```shell
 $: erlc greetings.erl
 $: erl -noshell -s greetings hello -s init stop
 >> Hello the World!
 ```
-### • Run with a script
-In the file ```greetings.sh```. The ```Erlang *.beam``` file should be stored in the same directory or you must precise the absolute path to it with the ```erlang -pa /directory/for_the/*.beam_file``` option.
+### • Run with a script, *sh*
+In the file ```greetings.sh```. The Erlang ```*.beam``` file should be stored in the same directory than the ```.sh``` file. Or you must precise the absolute path to it with the Erlang ``` -pa /directory/for_the/*.beam_file``` option.
 
 Example 1
 ```shell

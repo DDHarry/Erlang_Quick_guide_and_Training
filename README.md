@@ -367,10 +367,13 @@ $: erl -noshell -s greetings hello -s init stop
 >> Hello the World!
 ```
 ### • Run with a script
-In the file ```greetings.sh```
+In the file ```greetings.sh```. The ```Erlang *.beam``` file should be stored in the same directory or you must precise the absolute path to it with the ```erlang -pa /directory/for_the/*.beam_file``` option.
+
+Example 1
 ```shell
 #!/bin/sh
-erl -noshell -pa /home/jane/workspace/ -s greetings hello -s init stop  %% The absolute path containing greetings.beam
+%% The absolute path containing greetings.beam
+erl -noshell -pa /home/jane/workspace/ -s greetings hello -s init stop
 ```
 Then,
 ```
@@ -378,15 +381,45 @@ $: chmod u+x greetings.sh
 $: ./greetings.sh
   >> Hello the World!
 ```
+Example 2
+```erlang
+-module(greetings).
+-export([hello/1]).
+
+hello(A) ->
+  io:format("Hello ~s, 1 Arg~n", [A]).
+  init:stop.
+```
+then,
+```shell
+#!/bin/sh  %% The greetings.sh file
+%% The absolute path containing greetings.beam
+erl -noshell -pa /home/jane/workspace/ -s greetings hello "Bob"
+```
 
 ### • Run as an escript
 With an escript, you do not need to compile the file. In the file named  ``` greetings```,
+
+Example 1
 ```shell
 #!/usr/bin/env escript    %% in the file named 'greetings'
+
+% Args can be empty - see the Erlang comment
 main(Args)  ->
     io:format(Hello the World!~n").
 ```
+Always write on the form ```erlang main(Args)```. *Args* is a string of arguments, but can be empty. 
+
+Example 2
+```shell
+#!/usr/bin/env escript
+
+main(A) ->
+    io:format("Hello ~s~n", [A]).
+```
     
+    
+    
     
 ### • -compile(export_all)
 During development, you can use this special feature

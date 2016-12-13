@@ -379,6 +379,23 @@ $: ./greetings.sh
   >> Hello the World!
 ```
 
+### • Run as an escript
+With an escript, you do not need to compile the file. In the file named ```greetings''' ,
+```shell
+#!/usr/bin/env escript    %% in the file named 'greetings'
+main(Args)  ->
+    io:format(Hello the World!~n").
+```
+    
+    
+### • -compile(export_all)
+During development, you can use this special feature
+```erlang
+-compile(export_all).
+```
+to get faster. And remove it for production. Note this will make code analysis more difficult with the dialyzer.
+
+
 **[ &#8679; to the top](#table-of-content)**
 
 

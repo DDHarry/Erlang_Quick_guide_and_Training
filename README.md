@@ -367,7 +367,7 @@ $: erl -noshell -s greetings hello -s init stop
 >> Hello the World!
 ```
 ### • Run with a script
-In the file ```greetings.sh'''
+In the file ```greetings.sh```
 ```shell
 #!/bin/sh
 erl -noshell -pa /home/jane/workspace/ -s greetings hello -s init stop  %% The absolute path containing greetings.beam

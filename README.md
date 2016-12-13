@@ -380,7 +380,7 @@ $: ./greetings.sh
 ```
 
 ### • Run as an escript
-With an escript, you do not need to compile the file. In the file named ```greetings''' ,
+With an escript, you do not need to compile the file. In the file named  ``` greetings```,
 ```shell
 #!/usr/bin/env escript    %% in the file named 'greetings'
 main(Args)  ->

@@ -215,7 +215,7 @@ Associated with the nearest signifiant program constructing term, the other cons
 the @doc type is associated with the function print/1 .
 
 
-  ###  __Reference ::__ Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+###  •• Reference :: Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
 
 
 
@@ -303,22 +303,23 @@ the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ``
 
 
 
-  ### •• __Recommendation__
+### •• Recommendation
 
-  Place all these features in a file called **".erlang" ** file
+Place all these features in a file called **".erlang" ** file
 
-  When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
-  ```erlang
-   io:format("Hello, this is your .erlang file~n").
-  ```
-  Then
-  ```erlang
-  $: erl
-  >> Hello, this is your .erlang file
-  > Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
-  >
-  > Eshell V8.1  (abort with ^G) 
-  ```
+When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
+```erlang
+  io:format("Hello, this is your .erlang file~n").
+```
+then
+```erlang
+ $: erl
+ >> Hello, this is your .erlang file
+ > Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+ >
+ > Eshell V8.1  (abort with ^G) 
+ ```
+
 
 <a name="4.2"></a><a name="compilation-code-loading-running--compiling"></a>
 ### - [4.2](#compilation-code-loading-running--compiling) Compiling
@@ -410,7 +411,7 @@ Example 1
 %% The absolute path containing greetings.beam
 erl -noshell -pa /home/jane/workspace/ -s greetings hello -s init stop
 ```
-Then,
+then,
 ```
 $: chmod u+x greetings.sh
 $: ./greetings.sh
@@ -435,26 +436,41 @@ erl -noshell -pa /home/jane/workspace/ -s greetings hello "Bob"
 ### • Run as an escript
 With an escript, you do not need to compile the file. In the file named  ``` greetings```,
 
-Example 1
+- Example 1
 ```shell
 #!/usr/bin/env escript    %% in the file named 'greetings'
 
 % Args can be empty - see the Erlang comment
 main(Args)  ->
     io:format(Hello the World!~n").
+    
+>> ./greetings:4: Warning: variable 'Args' is unused
 ```
 Always write on the form ```erlang main(Args)```. *Args* is a string of arguments, but can be empty. 
 
-Example 2
+- Example 2
 ```shell
 #!/usr/bin/env escript
 
 main(A) ->
     io:format("Hello ~s~n", [A]).
 ```
-    
-    
-    
+when running
+```shell
+$: ./greetings
+ >> Hello
+ 
+$: ./greetings Bob
+ >> Hello Bob
+```
+
+
+
+
+
+
+
+
 
 **[ &#8679; to the top](#table-of-content)**
 

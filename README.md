@@ -214,7 +214,11 @@ Associated with the nearest signifiant program constructing term, the other cons
 ```
 the @doc type is associated with the function print/1 .
 
-### > Reference :: Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+
+  ###  __Reference ::__ Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+
+
+
 
 Erlang man pages ```Erlang
                  ```
@@ -297,27 +301,41 @@ $: erl -pa Dirb1 -pa Dirb2 -pa DirbN ... -pz Dire1 -pz Direp
 the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ```, ```-pz DireP``` adds ```Dire1, DireP ``` directories to the end of the code path.
 
 
-### > Recommendation <
 
-Place alll these features in a file called **".erlang" ** file
 
-When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
-```erlang
-io:format("Hello, this is your .erlang file~n").
-```
-Then
-```erlang
-$: erl
->> Hello, this is your .erlang file
-> Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
->
-> Eshell V8.1  (abort with ^G) 
-```
+  ### •• __Recommendation__
+
+  Place all these features in a file called **".erlang" ** file
+
+  When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
+  ```erlang
+   io:format("Hello, this is your .erlang file~n").
+  ```
+  Then
+  ```erlang
+  $: erl
+  >> Hello, this is your .erlang file
+  > Erlang/OTP 19 [erts-8.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
+  >
+  > Eshell V8.1  (abort with ^G) 
+  ```
 
 <a name="4.2"></a><a name="compilation-code-loading-running--compiling"></a>
 ### - [4.2](#compilation-code-loading-running--compiling) Compiling
 
-### • Compiling
+
+    
+### • Development -compile(export_all)
+During development, you can use this special feature
+```erlang
+-compile(export_all).
+```
+to get faster. And remove it for production. Note this will make code analysis more difficult with the dialyzer.
+
+
+
+
+### • Compiling for Production
 
 Example 1 : the New Hello World program,
 
@@ -383,7 +401,7 @@ $: erlc greetings.erl
 $: erl -noshell -s greetings hello -s init stop
 >> Hello the World!
 ```
-### • Run with a script, *sh*
+### • Run with a script, *.sh*
 In the file ```greetings.sh```. The Erlang ```*.beam``` file should be stored in the same directory than the ```.sh``` file. Or you must precise the absolute path to it with the Erlang ``` -pa /directory/for_the/*.beam_file``` option.
 
 Example 1
@@ -437,14 +455,6 @@ main(A) ->
     
     
     
-    
-### • -compile(export_all)
-During development, you can use this special feature
-```erlang
--compile(export_all).
-```
-to get faster. And remove it for production. Note this will make code analysis more difficult with the dialyzer.
-
 
 **[ &#8679; to the top](#table-of-content)**
 

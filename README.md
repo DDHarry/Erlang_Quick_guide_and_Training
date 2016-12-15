@@ -33,7 +33,7 @@ Erlang official documentation : http://erlang.org/doc/
 
 ## Table of content
 
-A. Sequential Erlang
+ • Part A :: SEQUENTIAL ERLANG
 
 1. [Starting and stopping the Erlang shell](#erlang-shell)
 
@@ -65,7 +65,7 @@ A. Sequential Erlang
 
 15. [Records and maps](#records-maps)
 
-Error : no > sequential
+ ERROR : no in the sequential part
 
 16. [Binaries and the Bit syntax](#binaries-bit-syntax)
 
@@ -101,7 +101,7 @@ Error : no > sequential
 
 32. [The dialyzer 9.3](#the-dializer)
 
-B. Distributed Erlang
+ • Part B :: DISTRIBUTED ERLANG
 
 33. [Rebar](#rebar)
 
@@ -309,7 +309,7 @@ the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ``
 
 
 
-### •• Recommendation
+### •• Recommendation ::
 
 > Place all these features in a file called **".erlang" ** file
 
@@ -470,7 +470,7 @@ $: ./greetings Bob
  >> Hello Bob
 ```
 
-### •• Nota Bene
+### •• Nota Bene ::
 > Changing the input type depending of where you run
 > Always write on the form ```erlang main(Args)```. *Args* contains a list of the command-line arguments re^resented as atoms. > As previously seen in the example 1, it can be empty. 
 
@@ -536,18 +536,85 @@ $: ./factorial 5
 
 
  
-<a name="make-makefile-automake"></a><a name="5"></a>
-## [5](#make-makefile-automake). Make, Makefile, Automake
+<a name="make-makefiles-automake"></a><a name="5"></a>
+## [5](#make-makefiles-automake). Make, Makefiles, Automake
 
-<a name="5.1"></a><a name="make-makefile-automake--make-makefiles"></a>
-### - [5.1](#make-makefile-automake--make-makefiles) Make, Makefile
+### •• References ::
+[The GNU make documentation](https://www.gnu.org/software/make/manual/make.html)
 
-### • Getting the path
+[The GNU gcc documentation](https://gcc.gnu.org/onlinedocs/)
+
+
+<a name="5.1"></a><a name="make-makefiles-automake--make-makefiles"></a>
+### - [5.1](#make-makefile-automake--make-makefiles) Make, Makefiles
+
+We consider all along the three difrent files in *C*
+```C
+#include <stdio.h>   // the file *hello.c*
+#include >stdlib.h>
+
+void Hello(void){
+ printf("Hello the World\n");
+}
+```
+
+```C
+// hello.h
+```
+
+```C
+// main.c
+```
+
+A direct compilation would be
+
+```shell
+$: gcc -c main.c -o main.o
+```
+
+```C
+ -c      : does not link, we get a *.o object file
+ -g      :
+ -I      :
+ -o      :
+ -w      :
+ -W      :
+ -Wall   :
+ -Werror :
+```
+
+```C
+$: gcc -c hello.c -o hello.o // -c does not link
+
+```
+
+
+
+
+
+### • Basics
+
+• Rules
+
+```shell
+target ... : dependencies
+ <TAB>      command
+ <TAB>      command
+          ...
+```
+
+• Example 1
+
+We have 
+```C
+
  
 ### • Automating compilation (makeFiles)
  
  
-### - [5.2](#make-makefile-automake--automake) Automake
+### - [5.2](#make-makefiles-automake--automake) Automake
+
+
 
 ### • Getting
 

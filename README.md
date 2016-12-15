@@ -59,7 +59,7 @@ A. Sequential Erlang
 
 12. [Case and if](#case-if)
 
-13. [Accumulators Accumulators @FHebert ](#accumulators)
+13. [Accumulators - Tail recursion Accumulators @FHebert ](#accumulators-tail-recursion)
 
 14. [Records and maps](#records-maps)
 
@@ -217,7 +217,9 @@ Associated with the nearest signifiant program constructing term, the other cons
 the @doc type is associated with the function print/1 .
 
 
-###  •• Reference :: Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
+###  •• Reference ::
+
+> Erlang [doc on eDoc](http://erlang.org/doc/apps/edoc/chapter.html)
 
 
 
@@ -307,13 +309,13 @@ the ``` -pa Dir1 ``` flags adds ```Dir1``` to the beginning and ``` -pz Dire1 ``
 
 ### •• Recommendation
 
-Place all these features in a file called **".erlang" ** file
+> Place all these features in a file called **".erlang" ** file
 
-When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
-```erlang
-  io:format("Hello, this is your .erlang file~n").
-```
-then
+> When Erlang starts, it first reads and evaluates all the commands inside this *.erlang* file.
+  ```erlang
+    io:format("Hello, this is your .erlang file~n").
+  ```
+ > then
 ```erlang
  $: erl
  >> Hello, this is your .erlang file
@@ -466,8 +468,9 @@ $: ./greetings Bob
  >> Hello Bob
 ```
 
-### •• Nota Bene :: Changing the input type depending of where you run
-Always write on the form ```erlang main(Args)```. *Args* contains a list of the command-line arguments re^resented as atoms. As previously seen in the example 1, it can be empty. 
+### •• Nota Bene
+> Changing the input type depending of where you run
+> Always write on the form ```erlang main(Args)```. *Args* contains a list of the command-line arguments re^resented as atoms. > As previously seen in the example 1, it can be empty. 
 
 
 

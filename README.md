@@ -436,7 +436,7 @@ erl -noshell -pa /home/jane/workspace/ -s greetings hello "Bob"
 ### • Run as an escript
 With an escript, you do not need to compile the file. In the file named  ``` greetings```,
 
-- Example 1
+Example 1
 ```shell
 #!/usr/bin/env escript    %% in the file named 'greetings'
 
@@ -446,16 +446,16 @@ main(Args)  ->
     
 >> ./greetings:4: Warning: variable 'Args' is unused
 ```
-Always write on the form ```erlang main(Args)```. *Args* is a string of arguments, but can be empty. 
 
-- Example 2
+
+Example 2
 ```shell
 #!/usr/bin/env escript
 
 main(A) ->
     io:format("Hello ~s~n", [A]).
 ```
-when running
+- when running
 ```shell
 $: ./greetings
  >> Hello
@@ -464,14 +464,69 @@ $: ./greetings Bob
  >> Hello Bob
 ```
 
+### •• Nota Bene Changing the input type depending of where you run
+Always write on the form ```erlang main(Args)```. *Args* contains a list of the command-line arguments re^resented as atoms. As previously seen in the example 1, it can be empty. 
 
 
 
+Example 3.a : *erl* shell
+```erlang
+-module(fac).
+-export([cmpt/1]).
 
+% in the file fac.erl
+cmpt(A) ->
+  F = fac(A),
+  io:format("Factorial ~w = ~w~n~n",[A,F]).
 
+fac(0)  ->  1;
+fac(N)  ->  N * fac(N-1).
+```
 
+Example 3.b *Unix* shell
+```erlang
+-module(fac_noshell).
+-export([cmpt/1]).
 
+%% in the file *fac_noshell*
+cmpt([A]) ->
+  I = list_to_integer(atom_to_list(A)),
+  F = fac(I),
+  io:format("Factorial ~w = ~w~n~n",[I,F]).
 
+fac(0)  ->  1;
+fac(N)  ->  N * fac(N-1).
+```
+- running it
+```shell
+erl -noshell -s fac_noshell cmpt 5 -s init stop
+```
+
+Example 3.c *escript*
+```erlang
+#!/usr/bin/env escript
+
+% in the file *fac_escript*
+main([A]) ->
+    I = list_to_integer(A),
+    F = fac(I),
+    io:format("Factorial ~w = ~w~n", [I,F]),
+    io:format("~n The argument 'A' in main([A]) is a list here~n~n").
+    
+fac(0) -> 1;
+fac(N) ->
+    N * fac(N-1).
+```
+- running it
+```shell
+$: chmod u+x fac_escript
+$: ./factorial 5
+ >> Factorial 5 = 120
+ ```
+ 
+ - Getting to know better the *A-type*
+ 
+ 
 **[ &#8679; to the top](#table-of-content)**
 
 

@@ -41,71 +41,73 @@ A. Sequential Erlang
 
 3. [Comments and Documentation - edoc](#comments-documentation-edoc)
 
-4. [Compilation, Code loading, Path, Running Erlang codes - Make](#compilation-code-loading-running-make)
+4. [Compilation, Code loading, Path, Running Erlang codes - Make](#compilation-code-loading-running)
 
-5. [Types  + 8.26 p137](#types)
+5. [Make, Makefile, Automake](#make-makefile-automake)
 
-6. [Strings](#strings)
+6. [Types  + 8.26 p137](#types)
 
-7. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
+7. [Strings](#strings)
 
-8. [More on Modules, Functions, Arguments MFA + arity p116 +attributes p117+8.13.Expression+8.14+8.15+8.25 p137](#mfa)
+8. [io:format](#io-format) + 8.12 [Escape sequences](#escape-sequences)
 
-9. [Funs : Higher order functions](#funs)
+9. [More on Modules, Functions, Arguments MFA + arity p116 +attributes p117+8.13.Expression+8.14+8.15+8.25 p137](#mfa)
 
-10. [Lists processing - Lists comprehension  + 4.9 p 70 + 8.16](#lists-processing-comprehension)
+10. [Funs : Higher order functions](#funs)
 
-11. [Guards](#guards)
+11. [Lists processing - Lists comprehension  + 4.9 p 70 + 8.16](#lists-processing-comprehension)
 
-12. [Case and if](#case-if)
+12. [Guards](#guards)
 
-13. [Accumulators - Tail recursion Accumulators @FHebert ](#accumulators-tail-recursion)
+13. [Case and if](#case-if)
 
-14. [Records and maps](#records-maps)
+14. [Accumulators - Tail recursion Accumulators @FHebert ](#accumulators-tail-recursion)
+
+15. [Records and maps](#records-maps)
 
 Error : no > sequential
 
-15. [Binaries and the Bit syntax](#binaries-bit-syntax)
+16. [Binaries and the Bit syntax](#binaries-bit-syntax)
 
-16. [Apply](#apply)
+17. [Apply](#apply)
 
-17. [Arithmetic expressions](#arithmetic-expressions)
+18. [Arithmetic expressions](#arithmetic-expressions)
 
-18. [Block expression](#block-expressions)
+19. [Block expression](#block-expressions)
 
-19. [Dynamic code loading](#dynamic-code-loading)
+20. [Dynamic code loading](#dynamic-code-loading)
 
-20. [Erlang-preprocessor](#erlang-preprocessor)
+21. [Erlang-preprocessor](#erlang-preprocessor)
 
-21. [Macros](#macros)
+22. [Macros](#macros)
 
-22. [Match operators in pattern](#operators-match-pattern)
+23. [Match operators in pattern](#operators-match-pattern)
 
-23. [Pattern matching in types and functions arity  XXXXXX hello/0 & hello/1](types-functions-pattern-matching)
+24. [Pattern matching in types and functions arity  XXXXXX hello/0 & hello/1](types-functions-pattern-matching)
 
-24. [Numbers](#numbers)
+25. [Numbers](#numbers)
 
-25. [Operator precedence](#operator-precedence)
+26. [Operator precedence](#operator-precedence)
 
-26. [The process dictionary](#process-dictionary)
+27. [The process dictionary](#process-dictionary)
 
-27. [References](#references)
+28. [References](#references)
 
-28. [Short-circuit Boolean expressions](#short-circuit-boolean-expressions)
+29. [Short-circuit Boolean expressions](#short-circuit-boolean-expressions)
 
-29. [Term comparisons](#term-comparisons)
+30. [Term comparisons](#term-comparisons)
 
-30. [Types : -spec & -type ]()
+31. [Types : -spec & -type ]()
 
-31. [The dialyzer 9.3](#the-dializer)
+32. [The dialyzer 9.3](#the-dializer)
 
 B. Distributed Erlang
 
-32. [Rebar](#rebar)
+33. [Rebar](#rebar)
 
-33. [Concurrrent programming Ch12 ](#concurrent-programming)
+34. [Concurrrent programming Ch12 ](#concurrent-programming)
 
-34. [Errors in concurrent programs](#errors-concurrent-programs)
+35. [Errors in concurrent programs](#errors-concurrent-programs)
 
 
 
@@ -529,11 +531,25 @@ $: ./factorial 5
  >> Factorial 5 = 120
  ```
  
+  
+**[ &#8679; to the top](#table-of-content)**
+
+
+ 
+<a name="make-makefile-automake"></a><a name="5"></a>
+## [5](#make-makefile-automake). Make, Makefile, Automake
+
+<a name="5.1"></a><a name="make-makefile-automake--make-makefiles"></a>
+### - [5.1](#make-makefile-automake--make-makefiles) Make, Makefile
+
+### • Getting the path
  
 ### • Automating compilation (makeFiles)
  
  
+### - [5.2](#make-makefile-automake--automake) Automake
 
+### • Getting
 
 
  
@@ -545,12 +561,12 @@ $: ./factorial 5
 
 
 
-<a name="types"></a><a name="5"></a>
-## [5](#types). Types
+<a name="types"></a><a name="6"></a>
+## [6](#types). Types
 
 
-<a name="5.1"></a><a name="types--variables"></a>
-### - [5.1](#types--variables) Variables
+<a name="6.1"></a><a name="types--variables"></a>
+### - [6.1](#types--variables) Variables
 
 Starts with an uppper case or the underscore symbole "_"
 ```erlang
@@ -569,8 +585,8 @@ There exists the *anonymous variable* "_" .
 
 
 
-<a name="5.2"></a><a name="types--atom"></a>
-### - [5.2](#types--atom) atom
+<a name="6.2"></a><a name="types--atom"></a>
+### - [6.2](#types--atom) atom
 
 An atom starts with a lowercase letters.
 ```erlang
@@ -578,8 +594,8 @@ An atom starts with a lowercase letters.
 ```
 
 
-<a name='5.3'></a><a name="types--tuple"></a>
-### - [5.3](#types--tuple) Tuple
+<a name='6.3'></a><a name="types--tuple"></a>
+### - [6.3](#types--tuple) Tuple
 
 ```erlang
 
@@ -598,8 +614,8 @@ Extracting values by pattern-matching
 ```
 
 
-<a name="5.4"></a><a name="types--list"></a>
-### - [5.4](#types--list) Lists
+<a name="6.4"></a><a name="types--list"></a>
+### - [6.4](#types--list) Lists
 
 ``` erlang
 [] % is the empty list

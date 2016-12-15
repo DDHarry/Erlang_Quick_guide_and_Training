@@ -41,7 +41,7 @@ A. Sequential Erlang
 
 3. [Comments and Documentation - edoc](#comments-documentation-edoc)
 
-4. [Compilation, Code loading, Path, Running Erlang codes ch10](#compilation-code-loading-running)
+4. [Compilation, Code loading, Path, Running Erlang codes - Make](#compilation-code-loading-running-make)
 
 5. [Types  + 8.26 p137](#types)
 
@@ -101,9 +101,11 @@ Error : no > sequential
 
 B. Distributed Erlang
 
-32. [Concurrrent programming Ch12 ](#concurrent-programming)
+32. [Rebar](#rebar)
 
-33. [Errors in concurrent programs](#errors-concurrent-programs)
+33. [Concurrrent programming Ch12 ](#concurrent-programming)
+
+34. [Errors in concurrent programs](#errors-concurrent-programs)
 
 
 
@@ -249,11 +251,11 @@ Example 2
 
 
 
-<a name="compilation-code-loading-running"></a><a name="4"></a>
-## [4](#compilation-code-loading-running). Compilation and Code loading
+<a name="compilation-code-loading-running-make"></a><a name="4"></a>
+## [4](#compilation-code-loading-running-make). Compilation and Code loading - Make
 
-<a name="4.1"></a><a name="compilation-code-loading-running--paths"></a>
-### - [4.1](#compilation-code-loading-running--paths) Paths
+<a name="4.1"></a><a name="compilation-code-loading-running-make--paths"></a>
+### - [4.1](#compilation-code-loading-running-make--paths) Paths
 ### • Getting the path
 
 Getting the 'home' directory
@@ -321,8 +323,8 @@ then
  ```
 
 
-<a name="4.2"></a><a name="compilation-code-loading-running--compiling"></a>
-### - [4.2](#compilation-code-loading-running--compiling) Compiling
+<a name="4.2"></a><a name="compilation-code-loading-running-make--compiling"></a>
+### - [4.2](#compilation-code-loading-running-make--compiling) Compiling
 
 
     
@@ -386,8 +388,8 @@ $: erl -noshell -s greetings hello Bob
 
 
 
-<a name="4.3"></a><a name="compilation-code-loading-running--running"></a>
-### - [4.3](#compilation-code-loading-running--running) Running
+<a name="4.3"></a><a name="compilation-code-loading-running-make--running"></a>
+### - [4.3](#compilation-code-loading-running-make--running) Running
 
 ### • Quick scripting
 
@@ -464,7 +466,7 @@ $: ./greetings Bob
  >> Hello Bob
 ```
 
-### •• Nota Bene Changing the input type depending of where you run
+### •• Nota Bene :: Changing the input type depending of where you run
 Always write on the form ```erlang main(Args)```. *Args* contains a list of the command-line arguments re^resented as atoms. As previously seen in the example 1, it can be empty. 
 
 
@@ -524,8 +526,13 @@ $: ./factorial 5
  >> Factorial 5 = 120
  ```
  
- - Getting to know better the *A-type*
  
+### • Automating compilation (makeFiles)
+ 
+ 
+
+
+
  
 **[ &#8679; to the top](#table-of-content)**
 

@@ -544,6 +544,8 @@ $: ./factorial 5
 
 [The GNU gcc documentation](https://gcc.gnu.org/onlinedocs/)
 
+Thanks to *kna*, member of the mooc platform [OpenClassrooms](https://openclassrooms.com/courses/compilez-sous-gnu-linux), the three *C* files come from her inspiration
+
 
 <a name="5.1"></a><a name="make-makefiles-automake--make-makefiles"></a>
 ### - [5.1](#make-makefile-automake--make-makefiles) Make, Makefiles

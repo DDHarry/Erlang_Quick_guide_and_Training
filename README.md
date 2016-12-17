@@ -3,18 +3,34 @@
 
 ## Conventions used for this style guide
 
-For the \*nix Shell
+#### - For the \*nix Shell
 ```erlang
 $: input prompt for the *nix Shell
 >> follow by an *nix shell output
 ```
 
-For the Erlang Shell
+#### - For the Erlang Shell
 ```Erlang
 > Erlang_cmd.   % 1st command input after the Erlang Shell prompt
 > c(greetings).   % 2nd command
  >> output the result
 ```
+
+#### - Naming scheme : the Erlang scheme
+
+```erlang
+  -module(module_precision).
+  ...
+```
+the file is recorded as ```module_precision.erl```.
+
+#### - Erlang
+
+Erlang is a fault-tolerant, distributed functional programming language. It promotes practicability over purely functionality.
+
+In Erlang, every function returns a value, that of the last evaluated expression.
+
+
 
 ## Sources
 
@@ -550,10 +566,10 @@ Thanks to *kna*, member of the mooc platform [OpenClassrooms](https://openclassr
 <a name="5.1"></a><a name="make-makefiles-automake--make-makefiles"></a>
 ### - [5.1](#make-makefile-automake--make-makefiles) Make, Makefiles
 
-We consider all along the three difrent files in *C*
+We consider all along the three following files in *C*
 ```C
 #include <stdio.h>   // the file *hello.c*
-#include >stdlib.h>
+#include <stdlib.h>
 
 void Hello(void){
  printf("Hello the World\n");
@@ -610,7 +626,8 @@ target ... : dependencies
 We have 
 ```C
 
- 
+```
+
 ### • Automating compilation (makeFiles)
  
  
@@ -719,11 +736,6 @@ Extracting by Head and Tail of a List
 
 
 
-
-
-
-
-
 Task list
 
 - [X] Live
@@ -731,8 +743,6 @@ Task list
 - [ ] Life
 
 - [ ] Love! Okay, this is done
-
-
 
 
 <a name="title"></a><a name="999"></a>

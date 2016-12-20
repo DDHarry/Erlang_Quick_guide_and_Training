@@ -772,4 +772,4 @@ here
 
 
 
-&copy; mweet.me - Visit our website <a href="https://mweet.me" target="_blank">&raquo;&raquo;</a>
+&copy; mweet.me - Visit our website <a href="https://mweet.me" target="_blank">&rsaquo;&raquo;</a>

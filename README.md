@@ -1,4 +1,4 @@
-# Programming Style Guide for [mweet.me](http://mweet.me)
+# Erlang Programming Style Guide for [mweet.me](http://mweet.me)
 
 
 ## Conventions used for this style guide

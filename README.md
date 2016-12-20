@@ -34,7 +34,7 @@ In Erlang, every function returns a value, that of the last evaluated expression
 
 ## Sources
 
-. The Erlang Reference Manual - [User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)
+• The Erlang Reference Manual - [User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)
 
 **Other**
 

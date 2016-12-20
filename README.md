@@ -6,7 +6,7 @@
 #### - For the \*nix Shell
 ```erlang
 $: input prompt for the *nix Shell
->> follow by an *nix shell output
+ >> follow by an *nix shell output
 ```
 
 #### - For the Erlang Shell

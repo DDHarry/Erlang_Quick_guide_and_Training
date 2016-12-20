@@ -1,4 +1,4 @@
-# Erlang Programming Style Guide for [mweet.me](http://mweet.me)
+# Erlang Programming Style Guide for mweet.me
 
 
 ## Conventions used for this style guide
@@ -772,4 +772,4 @@ here
 
 
 
-&copy; mweet.me - Visit our website <a href="http://mweet.me" target="_blank">&raquo;</a>
+&copy; mweet.me - Visit our website <a href="https://mweet.me" target="_blank">&raquo;&raquo;</a>

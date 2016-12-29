@@ -526,6 +526,7 @@ erl -noshell -s fac_noshell cmpt 5 -s init stop
 ```
 
 Example 3.c *escript*
+
 ```erlang
 #!/usr/bin/env escript
 

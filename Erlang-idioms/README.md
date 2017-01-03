@@ -51,7 +51,7 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 
 7 : illegal epression
 
-**CORRECT FORM**
+ >> CORRECT FORM
 
 A new notation
 ```erlang

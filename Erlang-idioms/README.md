@@ -1,13 +1,13 @@
 # Erlang idioms
 
 
-# Functions 1/2 Multiple clauses
+## Functions 1/2 Multiple clauses
 
-# Functions 2/2 Pattern matching and case of
+## Functions 2/2 Pattern matching and case of
 
 
 
-# Funs
+## Funs
 
 In functional programming languages, a function you define can be passed as a parameter to another function. Hencen the function parameter is bound to a variable. The latter can be used like any other variable within the function.
 

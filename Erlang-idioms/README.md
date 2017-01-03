@@ -14,7 +14,7 @@ In functional programming languages, a function you define can be passed as a pa
 A function which accepts such funtion as a parameter ared defined as a *higher-order* function. Higher-order function enables higher level of abstraction. Such a function-as-data object is sometimes called a *lambda expression* or a *closure*, a *fun* when anonymous (see bottom).
 
 
-- **Origin**
+**- Origin**
 
 Functional programming comes from the ability to construct such abstractions. It comes from mathematics, lambda calculus. In lambda calculus, everything functions accepts functions as parameters, operate on them because everything is defined as a function, included numbers, operators ...etc.
 
@@ -51,7 +51,7 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 
 7 : illegal epression
 
-**Correct form**
+**CORRECT FORM**
 
 A new notation
 ```erlang

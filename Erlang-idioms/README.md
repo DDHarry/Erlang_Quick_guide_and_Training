@@ -63,7 +63,7 @@ fun Module:function/arity     ::  % Use that specific function + bind it to a va
 Hence,
 ```erlang
 9>  fun_a:add(fun fun_a:one/0, fun fun_a:two/0).
- >> 23
+>> 23
 ```
 
 ## Recursion - Tail recursion

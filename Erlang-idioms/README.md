@@ -38,6 +38,7 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 5> fun_a:add(fun_a:one(),fun_a:two()).
 6> fun_a:add(one/0,two/0).
 7> fun_a:add(fun_a:one/0,fun_a:two/0).
+8> fun_a:add(fun_a:one/0, fun fun_a:two/0). or fun_a:add(fun fun_a:one/0, fun_a:two/0).
 ```
 2 : if function names are written without a parameter list > atoms
 
@@ -49,9 +50,11 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 
 6 : arithmetic expression > error when evaluating arithmetic expression
 
-7 : illegal epression
+7 : illegal expression
 
-8 : the correct answer
+8 : illegal expression
+
+9 : the correct answer
 
  > CORRECT FORM : A new notation
 ```erlang
@@ -59,7 +62,8 @@ fun Module:function/arity     ::  % Use that specific function + bind it to a va
 ```
 Hence,
 ```erlang
-8>  fun_a:add(fun fun_a:one/0, fun fun_a:two/0).
+9>  fun_a:add(fun fun_a:one/0, fun fun_a:two/0).
+ >> 23
 ```
 
 ## Recursion - Tail recursion

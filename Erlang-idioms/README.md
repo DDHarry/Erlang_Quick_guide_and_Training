@@ -13,7 +13,8 @@ A function which accepts such funtion as a parameter ared defined as a *higher-o
 
 Higher-order function enables higher level of abstraction in Erlang.
 
-**Origin**
+#### **Origin**
+
 Functional programming comes from the ability to construct such abstractions. It comes from mathematics, lambda calculus.
 
 In lambda calculus, everything functions accepts functions as parameters, operate on them because everything is defined as a function, included numbers, operators ...etc.

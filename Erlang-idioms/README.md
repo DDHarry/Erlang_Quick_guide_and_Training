@@ -9,7 +9,7 @@
 
 In functional programming languages, a function you define can be passed as a parameter to another function. Hencen the function parameter is bound to a variable. The latter can be used like any other variable within the function.
 
-A function which accepts such funtion as a parameter ared defined as a *higher-order* function. Higher-order function enables higher level of abstraction in Erlang.
+A function which accepts such funtion as a parameter ared defined as a *higher-order* function. Higher-order function enables higher level of abstraction. Such a function-as-data object is sometimes called a *lambda expression* or a *closure*, a *fun* when anonymous (see bottom).
 
 
 #### **Origin**
@@ -17,7 +17,7 @@ A function which accepts such funtion as a parameter ared defined as a *higher-o
 Functional programming comes from the ability to construct such abstractions. It comes from mathematics, lambda calculus. In lambda calculus, everything functions accepts functions as parameters, operate on them because everything is defined as a function, included numbers, operators ...etc.
 
 
-Thus, Erlang, as a *functional* programming language should be able to handle functions as data :
+Thus, Erlang, as a *functional* programming language, should be able to handle functions as data :
 
 - pass a function as input to another function,
 
@@ -25,7 +25,6 @@ Thus, Erlang, as a *functional* programming language should be able to handle fu
 
 - put a function in data structure then pick it up later ...
 
-Such a function-as-data object is sometimes called a *fun* (or a *lambda expression* or a *closure*).
 
 
 ## Recursion - Tail recursion

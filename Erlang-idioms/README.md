@@ -53,7 +53,7 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 
 8 : the correct answer
 
- >> CORRECT FORM : A new notation
+ > CORRECT FORM : A new notation
 ```erlang
 fun Module:function/arity     ::  % Use that specific function + bind it to a variable
 ```

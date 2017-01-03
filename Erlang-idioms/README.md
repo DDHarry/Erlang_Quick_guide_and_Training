@@ -55,7 +55,7 @@ Thus, Erlang, as a *functional* programming language, should be able to handle f
 
 A new notation
 ```erlang
-*fun Module:function/arity*     ::  % Use that specific function + bind it to a variable
+fun Module:function/arity     ::  % Use that specific function + bind it to a variable
 ```
 Hence,
 ```erlang

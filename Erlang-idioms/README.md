@@ -78,8 +78,9 @@ We recognise the same pattern > abstract the similar part with map/2
 
 
 ```erlang
-2> fun_b:mapm 
-
+2> L = [1,2,3].
+3> fun_b:mapm(fun fun_b:decr/1, L).
+>>> [0,1,2]
 ```
 
 ## Recursion - Tail recursion

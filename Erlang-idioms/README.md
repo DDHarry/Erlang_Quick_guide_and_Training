@@ -72,15 +72,25 @@ Hence,
 
 ###• Why, Gain?
 
+funs are an easy way to create abstraction.
+
 • fun_b.erl from (3)
+```erlang
+1> L = [1,2,3].
+2> fun_b:increment(L).
+>> [2,3,4]
 
-We recognise the same pattern > abstract the similar part with map/2
+3> fun_b:decrement(L).
+>> [0,1,2]
+```
 
+We recognise the same pattern > we abstract the similar part with map/2 (or mapm to show it is different from Erlang:sys).
 
 ```erlang
-2> L = [1,2,3].
-3> fun_b:mapm(fun fun_b:decr/1, L).
+4> fun_b:mapm(fun fun_b:decr/1, L).
 >>> [0,1,2]
+5> fun_b:mapm(fun fun_b:incr/1,L].
+>> [2,3,4]
 ```
 
 ## Recursion - Tail recursion

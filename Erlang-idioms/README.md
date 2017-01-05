@@ -129,6 +129,36 @@ or
 ```
 
 
+• **This fun is mine** fun_d.erl
+```erlang
+> Double = fun(X) -> 2*X.
+> Double(7).
+ >> 14
+ 
+> Triple = fun(X) -> 3*X.
+> Triple(5).
+ >> 15
+ ```
+ We are able to see the pattern. Hence we go further.
+ ```erlang
+ > Mult = fun(Times) -> (fun(X) -> Times*X end) end.
+ > Dbl = Mult(2).
+ > Dbl(7).
+  >> 14
+ 
+ > Trpl = Mult(3).
+ > Trpl(9).
+  >> 27
+```
+We get the same result for ```Qtpl = Mult(5)```
+```erlang
+> (Mult(5))(6)
+ >> 30
+ ```
+For the module version, see ```fun_d.erl'''
+
+
+
 ## Functions 1/2 Multiple clauses
 
 ## Functions 2/2 Pattern matching and case of

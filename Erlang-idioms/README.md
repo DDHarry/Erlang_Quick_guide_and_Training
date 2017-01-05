@@ -1,10 +1,13 @@
 # Erlang idioms
 
 
-## Functions 1/2 Multiple clauses
+# - C -
 
-## Functions 2/2 Pattern matching and case of
+fun_c.erl
 
+
+
+# - F -
 
 
 ## Funs
@@ -66,7 +69,7 @@ fun Module:function/arity     ::  % Use that specific function + bind it to a va
 Hence,
 ```erlang
 9> fun_a:add(fun fun_a:one/0, fun fun_a:two/0).
- >>> 23
+  >>> 23
 ```
 
 
@@ -74,24 +77,73 @@ Hence,
 
 funs are an easy way to create abstraction.
 
-• fun_b.erl from (3)
+• **Abstraction** fun_b.erl from (3)
 ```erlang
 1> L = [1,2,3].
 2> fun_b:increment(L).
->> [2,3,4]
+ >> [2,3,4]
 
 3> fun_b:decrement(L).
->> [0,1,2]
+ >> [0,1,2]
 ```
 
 We recognise the same pattern > we abstract the similar part with map/2 (or mapm to show it is different from Erlang:sys).
 
 ```erlang
 4> fun_b:mapm(fun fun_b:decr/1, L).
->>> [0,1,2]
+>> [0,1,2]
 5> fun_b:mapm(fun fun_b:incr/1,L].
 >> [2,3,4]
 ```
+
+
+• **Function as an argument to another function** fun_c.erl from (2)
+
+either_or_both lies in the fun_c.erl module. If you want to call it
+
+```erlang
+fun either_or_both/2
+```
+From another module, it would be
+```erlang
+fun fun_c:either_or_both/2
+```
+You can even bind it to a variable
+```erlang
+F = fun fun_c:either_or_both/2.
+```
+or pass it direcctly to another function
+```erlang
+yesno(fun fun_c:either_or_both/2)
+```
+Example
+```erlang
+2> yesno(fun fun_c:either_or_both/2).
+ >> yes
+```
+or
+```erlang
+3> P = fun fun_c:either_or_both/2.
+4> fun_c:yesno(P).
+ >> yes
+```
+
+
+## Functions 1/2 Multiple clauses
+
+## Functions 2/2 Pattern matching and case of
+
+
+
+# - G -
+
+## Guards
+
+fun_c.erl
+
+
+
+# - R -
 
 ## Recursion - Tail recursion
 

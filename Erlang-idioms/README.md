@@ -136,6 +136,8 @@ or
 
 
 
+
+
 • **This fun is mine** fun_d.erl
 ```erlang
 > Double = fun(X) -> 2*X.

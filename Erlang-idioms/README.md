@@ -129,6 +129,13 @@ or
 ```
 
 
+### Note : Argument(s)
+  *fun_a.erl* versus *fun_b.erl* versus *fun_c.erl*
+
+  We see the arguments are provided as an input with ```map``` to the list of arguments in *fun_b.erl*, whereas, in *fun_c.erl*, the arguments are given, already written in the code source.
+
+
+
 • **This fun is mine** fun_d.erl
 ```erlang
 > Double = fun(X) -> 2*X.

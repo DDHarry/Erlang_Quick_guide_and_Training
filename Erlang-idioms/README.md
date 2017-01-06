@@ -155,7 +155,8 @@ We get the same result for ```Qtpl = Mult(5)```
 > (Mult(5))(6)
  >> 30
  ```
-For the module version, see ```fun_d.erl'''
+For the module version, see ```fun_d.erl```
+
 
 
 
@@ -171,6 +172,26 @@ For the module version, see ```fun_d.erl'''
 
 fun_c.erl
 
+
+# - I -
+
+## If Case ... of
+
+```erlang
+if X>Y -> a();
+   true -> ok
+end
+```
+
+```erlang
+
+tot_price(Rate,P) ->
+         case Rate of
+           N -> P*N;
+           R -> P*R;
+           _ -> "Not the good input"
+         end.
+```
 
 
 # - R -

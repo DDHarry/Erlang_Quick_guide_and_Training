@@ -157,7 +157,7 @@ We get the same result for ```Qtpl = Mult(5)```
  ```
 For the module version, see ```fun_d.erl```
 ```erlang
-mtpl(Times,,N) ->
+mtpl(Times,N) ->
    Mult = fun(Tms) -> (fun(X) -> Tms*X end) end,
    Mult(Times),
    (Mult(Times))(N).

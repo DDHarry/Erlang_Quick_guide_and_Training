@@ -173,8 +173,9 @@ mtpl(Times,N) ->
 ```
 
 
+###• More fun(s)?
 
-
+```fun_e.erl``` 
 
 
 ## Functions 1/2 Multiple clauses

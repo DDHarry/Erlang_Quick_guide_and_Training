@@ -175,7 +175,16 @@ mtpl(Times,N) ->
 
 ###• More fun(s)?
 
-```fun_e.erl``` 
+In ```fun_e.erl```
+
+- examples to demonstrate the _shadow_ variables used inside the fun;
+
+- compact form;
+
+- fun can have any number of arguments.
+
+
+
 
 
 ## Functions 1/2 Multiple clauses

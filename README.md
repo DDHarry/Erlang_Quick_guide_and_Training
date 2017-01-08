@@ -49,10 +49,10 @@ compute_functional(N) ->
  % if obvious, in 6 months andalso in 3 years,
  %  -> shorter names are welcomed end.
  -module(compute_functl).
- -export([func/1]).
+ -export([fn/1]).
  
- func(0) -> 1;
- func(N) -> N*func(N-1).
+ fn(0) -> 1;
+ fn(N) -> N*fn(N-1).
 ```
   
 ## Sources

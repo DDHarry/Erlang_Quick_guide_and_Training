@@ -31,7 +31,30 @@ Erlang is a fault-tolerant, distributed functional programming language. It prom
 In Erlang, every function returns a value, that of the last evaluated expression.
 
 
+## General naming scheme
 
+We follow the historical practices
+
+```erlang
+% module
+module_doing_stuff.erl
+
+%Variable
+MakeTest = 1+2.
+
+% function
+compute_functional(N) ->
+  ... fill-in
+  
+ % if obvious, in 6 months andalso in 3 years,
+ %  -> shorter names are welcomed end.
+ -module(compute_functl).
+ -export([func/1]).
+ 
+ func(0) -> 1;
+ func(N) -> N*func(N-1).
+```
+  
 ## Sources
 
 • The Erlang Reference Manual - [User's Guide :](http://erlang.org/doc/reference_manual/users_guide.html)

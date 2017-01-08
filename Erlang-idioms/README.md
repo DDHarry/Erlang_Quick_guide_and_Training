@@ -3,6 +3,8 @@
 
 # - C -
 
+## Case ... of ... end cf. Functions 2/2 : Pattern matching and case ... of
+
 fun_c.erl
 
 
@@ -87,7 +89,7 @@ funs are an easy way to create abstraction.
  >> [0,1,2]
 ```
 
-We recognise the same pattern > we abstract the similar part with map/2 (or mapm to show it is different from Erlang:sys).
+We recognize the same pattern > we abstract the similar part with map/2 (or mapm to show it is different from Erlang:sys).
 
 ```erlang
 4> fun_b:mapm(fun fun_b:decr/1, L).
@@ -112,7 +114,7 @@ You can even bind it to a variable
 ```erlang
 F = fun fun_c:either_or_both/2.
 ```
-or pass it direcctly to another function
+or pass it directly to another function
 ```erlang
 yesno(fun fun_c:either_or_both/2)
 ```
@@ -175,7 +177,7 @@ mtpl(Times,N) ->
 
 ###• More fun(s)?
 
-In ```fun_e.erl```
+• In ```fun_e.erl```
 
 - examples to demonstrate the _shadow_ variables used inside the fun;
 
@@ -184,6 +186,14 @@ In ```fun_e.erl```
 - fun can have any number of arguments.
 
 
+• Functions that have fun as their arguments ```fun_f.erl```
+
+Namely, ```func(fun ..., Arg)```. Some of the examples come from (4).
+
+
+• Functions that return fun ```fun_g.erl```
+
+Like ```MakeTest = fun(L) -> (fun(X) -> lists:member(X,L) end) end.```
 
 
 
@@ -230,6 +240,16 @@ tot_price(Rate,P) ->
 *fun_b.erl*
 
 
+
+# - S -
+
+## spawn processes
+
+(1) loop fun_f as a start > 1. launch :: io:format("Enter L"), enter the loop(2. dbl_list(L) 3.Enter L, loop)
+
+(2) echo
+
+(3) distributed computing
 
 ## Credits
 Many of the examples are coming from the following sources. The credits go to their respective authors.

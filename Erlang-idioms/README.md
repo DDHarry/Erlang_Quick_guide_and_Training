@@ -177,7 +177,7 @@ mtpl(Times,N) ->
 
 ###• More fun(s)?
 
-• In ```fun_e.erl```
+1. In ```fun_e.erl```
 
 - examples to demonstrate the _shadow_ variables used inside the fun;
 
@@ -186,12 +186,12 @@ mtpl(Times,N) ->
 - fun can have any number of arguments.
 
 
-• Functions that have fun as their arguments ```fun_f.erl```
+2. Functions that have fun as their arguments ```fun_f.erl```
 
 Namely, ```func(fun ..., Arg)```. Some of the examples come from (4).
 
 
-• Functions that return fun ```fun_g.erl```
+3. Functions that return fun ```fun_g.erl```
 
 Like ```MakeTest = fun(L) -> (fun(X) -> lists:member(X,L) end) end.```
 

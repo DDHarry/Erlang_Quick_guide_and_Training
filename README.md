@@ -228,7 +228,7 @@ Extracting information using module_info/0
  {attributes,[{vsn,[162240441480510559803838439317941366835]}]},
  {compile,[{options,[]},
            {version,"7.0.2"},
-           {source,"/Users/jeanbaptiste/workspace/wkserlang/greetings.erl"}]},
+           {source,"/Users/james/workspace/greetings.erl"}]},
  {native,false},
  {md5,<<122,14,95,88,121,242,93,116,30,92,210,87,59,169,
         176,51>>}

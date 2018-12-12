@@ -4,16 +4,16 @@
 
 *Italic Gros*
 
-Boting some code 3 tabs
+Boting some code 3 tabs, blank line, before & after
 
       -module(hello).
       
-alos
+alos, 1 tab
 
   io:format("test").
 
 do not get, 2 tabs
 
     -eval(Pr).
-stop().
+stop(). no lien after
 

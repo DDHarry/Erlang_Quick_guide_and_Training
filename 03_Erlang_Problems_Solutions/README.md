@@ -1,0 +1,3 @@
+* Some Problems, Exercices and their Solutions
+
+Taken almost any where, the Erlang documentation, some Erlang's books, fabricated ...

@@ -4,12 +4,16 @@
 
 *Italic Gros*
 
-Boting some code
+Boting some code 3 tabs
+
       -module(hello).
+      
 alos
+
   io:format("test").
 
-do not get
+do not get, 2 tabs
+
     -eval(Pr).
 stop().
 

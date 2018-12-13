@@ -1,9 +1,11 @@
 We adopt the foolowing notations
 
-      $   the *nix shell
+For the *nix shell ```shell $ ```
+and for the Erlang shell ``` 1> ```
+
       
-      >   the Erlang shell
-        >>  the Erlang shell's return
+>   the Erlang shell
+ >>  the Erlang shell's return
         
 An example
 

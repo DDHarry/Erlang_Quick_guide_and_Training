@@ -3,17 +3,15 @@ We adopt the foolowing notations
       $   the *nix shell
       
       >   the Erlang shell
-  
         >>  the Erlang shell's return
         
 An example
 
       > X =4.
         >> 4
-      >
   
 
-** atom **
+#b atom 
 ----
 Atoms start with lower cases. They are not like variables which can have a value.
 -> Global
@@ -21,7 +19,7 @@ Atoms start with lower cases. They are not like variables which can have a value
           an_atom | 'An atom with spaces' | myName
 
 
-Variable
+#B Variable
 --------
 Variables in Erlang are so immutable.
 -> '_' is the anonymous variable

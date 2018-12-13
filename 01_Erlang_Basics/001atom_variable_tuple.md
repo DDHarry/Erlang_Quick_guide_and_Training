@@ -5,12 +5,13 @@ For any *nix shell ``` $ ``` and  ` 1>` for the Erlang shell
 An example
 ```Erlang
    > X =4.
-      >> 4```
+      >> 4
+ ```
 
   
 
-#b atom 
-----
+**atom** 
+  ----
 Atoms start with lower cases. They are not like variables which can have a value.
 -> Global
 -> No garbage collect

@@ -2,14 +2,11 @@ We adopt the foolowing notations
 
 For any *nix shell ``` $ ``` and  ` 1>` for the Erlang shell
 
-      
->   the Erlang shell
- >>  the Erlang shell's return
-        
 An example
+```Erlang
+   > X =4.
+      >> 4```
 
-      > X =4.
-        >> 4
   
 
 #b atom 

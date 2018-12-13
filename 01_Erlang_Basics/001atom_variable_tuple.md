@@ -1,8 +1,16 @@
 We adopt the foolowing notations
 
-  > :: Erlang shell
+      $   the *nix shell
+      
+      >   the Erlang shell
   
-    >> :: Erlang shell's return
+        >>  the Erlang shell's return
+        
+An example
+
+      > X =4.
+        >> 4
+      >
   
 
 ** atom **

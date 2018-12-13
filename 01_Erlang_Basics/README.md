@@ -1,2 +1,2 @@
-# All the basics about the Erlang programming language
-------------------------------------------------------
+# Some basics about the Erlang programming language
+

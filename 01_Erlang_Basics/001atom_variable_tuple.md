@@ -1,7 +1,6 @@
 We adopt the foolowing notations
 
-For the *nix shell ```bash $ ```
-and for the Erlang shell ``` 1> ```
+For any *nix shell ``` $ ``` and  ```Erlang 1> ``` for the Erlang shell
 
       
 >   the Erlang shell

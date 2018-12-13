@@ -1,6 +1,6 @@
 We adopt the foolowing notations
 
-For any *nix shell ``` $ ``` and  ```erlang 1> ``` for the Erlang shell
+For any *nix shell ``` $ ``` and  ` 1>` for the Erlang shell
 
       
 >   the Erlang shell

@@ -1,9 +1,11 @@
-%%% We adopt the foolowing notations
+We adopt the foolowing notations
+
   > :: Erlang shell
+  
     >> :: Erlang shell's return
   
 
-atom
+** atom **
 ----
 Atoms start with lower cases. They are not like variables which can have a value.
 -> Global

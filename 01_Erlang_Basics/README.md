@@ -2,4 +2,4 @@
 
 ## Data structures
 
-01 Atoms, Tuples, Lists
+01_Atoms, Tuples, Lists

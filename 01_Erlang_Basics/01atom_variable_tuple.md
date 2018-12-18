@@ -4,9 +4,8 @@ For any *nix shell ``` $ ``` and  ` 1>` for the Erlang shell
 
 An example
 ```Erlang
-   > X =4.
-      >> 4
- ```
+   > X =4.   % => 4
+```
 
   
 

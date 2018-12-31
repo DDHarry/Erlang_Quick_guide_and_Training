@@ -18,7 +18,7 @@ Erlang is a  concurrent and functional programming language whose development fa
 
 
 ### Table of content
-----
+___
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;
 

@@ -1,5 +1,8 @@
-# Erlang
+# Erlang Tips & Programming guide
+
+
 Some Erlang tools, libs and a lot of funs ;-)
+
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;
 

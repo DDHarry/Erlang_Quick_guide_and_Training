@@ -14,11 +14,11 @@ Erlang is a  concurrent and functional programming language whose development fa
 
   - **soft real-time**; thanks to an efficient usage of any multi-cores, multi-processors architecture;
 
-  - **distributed**; another Erlang's strength, it can manage millions of processes efficiently. Actually, the more, the more performant it becomes.
+  - --distributed--; another Erlang's strength, it can manage millions of processes efficiently. Actually, the more, the more performant it becomes.
 
 
 ### Table of content
-___
+
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;
 

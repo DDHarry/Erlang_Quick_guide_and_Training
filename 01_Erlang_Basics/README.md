@@ -7,7 +7,7 @@
 
 **test_2_Stars** Are you bold?
 
-** Double it with spaces ** Still bold?
+** Double it with spaces ** Still bold? * * ho! * *
 
 __Another_With_undersscores__ Who do yout think is?
 

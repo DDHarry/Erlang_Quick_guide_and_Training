@@ -10,11 +10,11 @@ Erlang is a  concurrent and functional programming language whose development fa
 
   • **scalability**, because concurrency relies onto small, independant programs;
 
-  • __fault-tolerance__, it was specifically built to protect against faillures;
+  • **fault-tolerance**, it was specifically built to protect against faillures;
 
-• __soft real-time __
+  • **soft real-time**, thanks to an efficient usage of any multi-cores, multi-processors architecture;
 
-• **distributed**.
+  • **distributed**; another Erlang's strength, it can manage millions of processes efficiently. Actually, the more, the more performant it becomes.
 
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;

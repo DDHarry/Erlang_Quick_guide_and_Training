@@ -5,10 +5,11 @@
 01_Atoms, Tuples, Lists
 
 
-**test_2_Stars**
+**test_2_Stars** Are you bold?
 
-** Double it with spaces **
+** Double it with spaces ** Still bold?
 
-__Another_With_undersscores__
+__Another_With_undersscores__ Who do yout think is?
 
-__ Double it with spaces __
+__ Double it with spaces __ Hence ...?
+

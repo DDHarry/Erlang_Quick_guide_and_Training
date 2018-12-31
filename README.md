@@ -8,11 +8,11 @@ Some Erlang tools, libs and a lot of funs ;-)
 
 Erlang is a  concurrent and functional programming language whose development favors practicability over purity. It is production oriented. It's syntax follows this same philosophy, lean, efficient and straightforward. Thanks to its concurrency characteristics, Erlang also benefits from these interesting properties:
 
-  - **scalability**, because concurrency relies onto small, independant programs;
+  - **scalability**; because concurrency relies onto small, independant programs;
 
-  - **fault-tolerance**, it was specifically built to protect against faillures;
+  - **fault-tolerance**; it was specifically built to protect against faillures;
 
-  - **soft real-time**, thanks to an efficient usage of any multi-cores, multi-processors architecture;
+  - **soft real-time**; thanks to an efficient usage of any multi-cores, multi-processors architecture;
 
   - **distributed**; another Erlang's strength, it can manage millions of processes efficiently. Actually, the more, the more performant it becomes.
 

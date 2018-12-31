@@ -1,4 +1,4 @@
-# Erlang Tips & Programming guide
+# Erlang Tips, Training & Programming guide
 
 
 Some Erlang tools, libs and a lot of funs ;-)

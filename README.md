@@ -17,10 +17,8 @@ Erlang is a  concurrent and functional programming language whose development fa
   - **distributed**; another Erlang's strength, it can manage millions of processes efficiently. Actually, the more, the more performant it becomes.
 
 
-
-
-## 2. Erlang basics
-
+Table of content
+--
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;
 
@@ -30,6 +28,13 @@ Erlang is a  concurrent and functional programming language whose development fa
 A main feature of this programming language.
 
 04 :: Some exerices and problems. Most of them are derived from the Erlang official documentation, others come from the referenced books listed at the bottom of this page.
+
+
+
+## 2. Erlang basics
+
+
+
 
 
 ## R. Some references

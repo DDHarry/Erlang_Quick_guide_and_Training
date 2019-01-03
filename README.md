@@ -34,13 +34,25 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 5). hello.erl - the very classic "Hello the World"
 
 
+
+
 ## 2. Compiling, Running, Generating eDoc
 
+There exists two ways to compile then run Erlang programs,
 
-Put all of these, here
+- compile, then run within the Erlang shell
 
-    test quote
-    here
+          ```erlang
+          $ erl
+          Erlang/OTP ...
+          1> c(hello).
+          {ok,hello}
+          2> hello:world().
+          Hello the World
+          ok
+          3>
+          ```
+
 
 
 ## 3. Getting some help

@@ -43,7 +43,7 @@ There exists two ways to compile then run Erlang programs,
 - compile, then run within the Erlang shell
 
 ``` erlang
-   \$ erl
+   $ erl
    Erlang/OTP ...
    1> c(hello).
    {ok,hello}
@@ -52,6 +52,8 @@ There exists two ways to compile then run Erlang programs,
    ok
    3>
 ```
+
+- compile then run outside the Erlang shell, using '''erlc'''.
 
 
 

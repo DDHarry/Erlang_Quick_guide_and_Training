@@ -1,10 +1,10 @@
 %%% Classic Hello the World
 %%% Or anybody's name
--module(greetings).
--export([hello/0, hello/1]).
+-module(hello).
+-export([world/0, world/1]).
 
-hello() ->
+world() ->
   io:format("Hello the World~n", []).
   
-hello(Someone)  ->
+world(Someone)  ->
   io:format("Hello ~st~n", Someone).

@@ -53,9 +53,13 @@ There exists two ways to compile then run Erlang programs,
    3>
 ```
 
-- compile then run outside the Erlang shell, using '''erlc'''.
+- compile then run outside the Erlang shell, using ```erlc```.
 
+```Erlang
+erlc hello.erl
+```
 
+```Erlang
 
 ## 3. Getting some help
 

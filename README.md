@@ -34,7 +34,7 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 5). hello.erl - the very classic "Hello the World"
 
 
-## 2. Running, Compiling, Doc
+## 2. Compiling, Running, Generating eDoc
 
 
 Put all of these, here

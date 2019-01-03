@@ -23,13 +23,24 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 ### Table of content
 ---
 
-1). **01_Erlang_basics** - The basics about the Erlang programming language, sequential and also concurrent programming;
-- atoms, variables
-- ETS, DETS, Mnesia
+1). **01_Erlang_basics** - The basics about the Erlang programming language, sequential and also concurrent programming:
+- atoms, variables,
+- MFA, Module, Function, Arguments,
+- lists, lists comprehension,
+- funs, lambda functions,
+- records, maps
+- BIFs,guards,
+- ETS, DETS, Mnesia;
 
-2). **02_Erlang_idioms** - More in-depth coverage of some essential constructions specific to Erlang or, sometimes to the functional programming languages.
+2). **02_Erlang_idioms** - More in-depth coverage of some essential constructions specific to Erlang or, sometimes to the functional programming languages:
+- recursion, tail-recursion,
+- more funs,
+- types;
    
-3). **03_Distributed_Erlang** - Distributed, or concurrent Erlang, a main feature of this programming language.
+3). **03_Distributed_Erlang** - Distributed, or concurrent Erlang, a main feature of this programming language:
+- message passing,
+- receive, select,
+- spawn processes;
 
 4). **04_Erlang_Problems_Solutions** - Some exerices and problems. Most of them are derived from the Erlang official documentation, others come from the referenced books listed at the bottom of this page.
 

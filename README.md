@@ -71,12 +71,15 @@ There exists two ways to compile then run Erlang programs,
 - compile then run outside the Erlang shell, using ```erlc```.
 
 ```Erlang
-erlc hello.erl
+$) erlc hello.erl
 ```
 
 ```Erlang
 yy
 ```
+```$)``` is the Unix shell, ```5>```, the Erlang shell.
+
+
 
 
 ## 3. Getting some help

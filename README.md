@@ -77,7 +77,8 @@ $) erlc hello.erl
 ```Erlang
 yy
 ```
-```$)``` is the Unix shell, ```5>```, the Erlang shell.
+
+where ```$)``` is the Unix shell, ```5>```, the Erlang shell.
 
 
 

@@ -35,6 +35,7 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 
 ## 2. Running, Compiling, Doc
+--------
 
 Put all of these, here
 

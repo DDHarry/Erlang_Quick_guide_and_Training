@@ -42,16 +42,16 @@ There exists two ways to compile then run Erlang programs,
 
 - compile, then run within the Erlang shell
 
-          ``` erlang
-          $ erl
-          Erlang/OTP ...
-          1> c(hello).
-          {ok,hello}
-          2> hello:world().
-          Hello the World
-          ok
-          3>
-          ```
+``` erlang
+   $ erl
+   Erlang/OTP ...
+   1> c(hello).
+   {ok,hello}
+   2> hello:world().
+   Hello the World
+   ok
+   3>
+```
 
 
 

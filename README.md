@@ -24,6 +24,8 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 ---
 
 1). **01_Erlang_basics** - The basics about the Erlang programming language, sequential and also concurrent programming;
+- atoms, variables
+- ETS, DETS, Mnesia
 
 2). **02_Erlang_idioms** - More in-depth coverage of some essential constructions specific to Erlang or, sometimes to the functional programming languages.
    
@@ -62,6 +64,9 @@ erlc hello.erl
 ```
 
 ```Erlang
+yy
+```
+
 
 ## 3. Getting some help
 

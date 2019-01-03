@@ -44,7 +44,7 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 4). **04_Erlang_Problems_Solutions** - Some exerices and problems. Most of them are derived from the Erlang official documentation, others come from the referenced books listed at the bottom of this page.
 
-5). ***05_Deeper Erlang** - Deeper than you think; profiling ...
+5). **05_Deeper Erlang** - Deeper than you think; profiling ...
 
 6). hello.erl - the very classic "Hello the World".
 

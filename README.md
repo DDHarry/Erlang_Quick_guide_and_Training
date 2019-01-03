@@ -34,14 +34,22 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 5). hello.erl - the very classic "Hello the World"
 
 
-## 2. Erlang basics
+## 2. Running, Compiling, Doc
+
+Put all of these, here
+
+
+
+## 3. Getting some help
+
+The references, not citing DuckDuckGo or StackOverflow.
 
 
 
 
-
-## R. Some references
+## 4. Some references
 - *Programming Erlang - Sofware for a concurrent World* by Joe Armstrong,
 - *Designing for scalability with Erlang/OTP* by Franceso Cesarini and Steve Vinovski,
 - *Erlang and OTP in action* by Martin Logan, Eric Merritt and Richard Carlsson and
 - *Learn you some Erlang for great good* by Fred Hébert.
+

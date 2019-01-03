@@ -20,7 +20,7 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 
 
-### Table of content
+## Table of content
 
 
 01 :: The basics about the Erlang programming language, sequential and also concurrent programming;

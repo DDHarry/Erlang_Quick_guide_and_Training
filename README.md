@@ -4,7 +4,8 @@
 Some Erlang tools, libs and a lot of funs ;-)
 
 
-   ### Note : __This is not an introduction to Erlang,
+   ### Note :
+   __This is not an introduction to Erlang,
    just a basic guide to be more performant,
    proficient in Erlang.__
       

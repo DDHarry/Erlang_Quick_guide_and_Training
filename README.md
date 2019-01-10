@@ -62,14 +62,14 @@ The Erlang unit programming block is called a module. It starts with ```-module(
 
 ### About the syntax
 
-Erlang favors the "\_" (underscore) ```Erlang special_character``` to complete names for modules, fonctions, variables ...
+Erlang favors the "\_" (underscore) ```special_character``` to complete names for modules, fonctions, variables ...
 
 
 
 
 ## 4. Compiling, Running, Generating eDoc
 
-We can use the Erlang shell we call by the command ```bash $ erl ```. This REPL feature appears very convenient to try and for little computation. For more sophisticated or complex programs, we need to compile the code which was interpreted in the former case. There exists two ways to compile then run Erlang programs,
+We can use the Erlang shell we call by the command ```$ erl ```. This REPL feature appears very convenient to try and for little computation. For more sophisticated or complex programs, we need to compile the code which was interpreted in the former case. There exists two ways to compile then run Erlang programs,
 
 - compile, then run within the Erlang shell
 

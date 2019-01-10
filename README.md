@@ -70,7 +70,7 @@ The Erlang unit programming block is called a module. It starts with ```-module(
 
 - Erlang favors the "\_" (underscore) ```special_character``` to complete names for modules, fonctions, variables ...
 
-- Everything is a function and every function, expression returns a value;
+- Everything is an expression and every function returns a value;
 
 - each line ends with ```.```, except when it is not the last part of the returned expression.
 

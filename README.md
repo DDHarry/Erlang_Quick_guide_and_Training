@@ -4,6 +4,12 @@
 Some Erlang tools, libs and a lot of funs ;-)
 
 
+      **Note**
+      __This is not an introduction to Erlang,
+      just a basic guide to be more performant,
+      proficient in Erlang.__
+      
+
 ## 1. Erlang in short
 
 Erlang is a  concurrent and functional programming language whose development favors practicability over purity. It is production oriented. Along with its concurrency characteristics, Erlang also benefits from these interesting properties:
@@ -62,7 +68,11 @@ The Erlang unit programming block is called a module. It starts with ```-module(
 
 ### About the syntax
 
-Erlang favors the "\_" (underscore) ```special_character``` to complete names for modules, fonctions, variables ...
+- Erlang favors the "\_" (underscore) ```special_character``` to complete names for modules, fonctions, variables ...
+
+- Everything is a function and every function, expression returns a value;
+
+- each line ends with ```.```, except when it is not the last part of the returned expression.
 
 
 

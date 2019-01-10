@@ -54,11 +54,17 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 ## 3. Anatomy of an Erlang program
 
-The Erlang unit programming block is called a module. It starts with ```-module(my_module)``` if it is the name of the module and written down to a file whose name must be the same as the module, hence ```my_module.erl```. For more, cf. the references.
+The Erlang unit programming block is called a module. It starts with ```-module(my_first_prog).```  if it is the name of the module and written down to a file whose name must be the same as the module's one. Hence ```my_first_prog.erl``` becomes the name of this file. For more, cf. the references.
 
 ```Erlang
--module(my_prog).
+-module(my_first_prog).
 ```
+
+### About the syntax
+
+Erlang favors the "\_" (underscore) ```Erlang special_character``` to complete names for modules, fonctions, variables ...
+
+
 
 
 ## 4. Compiling, Running, Generating eDoc

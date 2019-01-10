@@ -51,9 +51,19 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 
 
-## 3. Compiling, Running, Generating eDoc
 
-There exists two ways to compile then run Erlang programs,
+## 3. Anatomy of an Erlang program
+
+The Erlang unit programming block is called a module. It starts with ```-module(my_module)``` if it is the name of the module and written down to a file whose name must be the same as the module, hence ```my_module.erl```. For more, cf. the references.
+
+```Erlang
+-module(my_prog).
+```
+
+
+## 4. Compiling, Running, Generating eDoc
+
+We can use the Erlang shell we call by the command ```bash $ erl ```. This REPL feature appears very convenient to try and for little computation. For more sophisticated or complex programs, we need to compile the code which was interpreted in the former case. There exists two ways to compile then run Erlang programs,
 
 - compile, then run within the Erlang shell
 

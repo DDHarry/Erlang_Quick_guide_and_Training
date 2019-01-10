@@ -51,7 +51,7 @@ The syntax of Erlang share this same philosophy, lean, efficient, straightforwar
 
 
 
-## 2. Compiling, Running, Generating eDoc
+## 3. Compiling, Running, Generating eDoc
 
 There exists two ways to compile then run Erlang programs,
 
@@ -83,14 +83,14 @@ where ``` $) ``` is the Unix shell and ``` 5> ```, the Erlang shell.
 
 
 
-## 3. Getting some help
+## 4. Getting some help
 
 The references, not citing DuckDuckGo or StackOverflow.
 
 
 
 
-## 4. Some references
+## 5. Some references
 - *Programming Erlang - Sofware for a concurrent World* by Joe Armstrong,
 - *Designing for scalability with Erlang/OTP* by Franceso Cesarini and Steve Vinovski,
 - *Erlang and OTP in action* by Martin Logan, Eric Merritt and Richard Carlsson and

@@ -1,4 +1,4 @@
-# Erlang Programming Style Guide for mweet.me
+# Erlang Programming Style Guide for llC
 
 
 ## Conventions used for this style guide

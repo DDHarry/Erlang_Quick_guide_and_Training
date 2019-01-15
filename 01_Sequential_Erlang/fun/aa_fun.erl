@@ -1,7 +1,7 @@
 %% Learn you some Erlang for great good
 %% Fred Hébert
 %%
--module(fun_a).
+-module(aa_fun).
 -export([one/0,two/0,add/2]).
 
 one() ->  1.

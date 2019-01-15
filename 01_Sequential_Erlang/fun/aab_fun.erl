@@ -4,7 +4,7 @@
 %%
 %% Note ::  Tail-recursion
 %%
--module(fun_b).
+-module(aab_fun).
 -export([increment/1,decrement/1]).
 -export([mapm/2,incr/1,decr/1]).
 
